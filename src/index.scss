@@ -6,8 +6,57 @@ html{
 body{
     background-color: #c2b49a;
 }
-
-h3{
-    font-size: 50px;
+.home{
     color: white;
+    display: grid;
+    place-items: center;
+}
+p{
+    margin-top: 7vh;
+    font-size: 40px;
+}
+
+.play {
+    padding-top: 10px;
+    font-size: 55px;
+}
+
+h1{
+    margin-top: 20vh;
+    font-size: 140px;
+}
+
+.typewriter{
+    overflow: hidden;
+    border-right: .07em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.1s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from {width: 0}
+
+    to {width: 80%}
+}
+
+@keyframes blink-caret {
+    from,to {
+        border-color: transparent
+    }
+    50% {border-color: white;}
+}
+.fade{
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+
 }
