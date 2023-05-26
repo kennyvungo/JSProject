@@ -14,9 +14,9 @@ class Record{
         }
         else{
             this.rec.classList.add("fadeout");
-            this.ipo = document.querySelector(".ipod")
-            this.ipo.classList.add("fastfade")
-            this.ipo.classList.remove("hidden")
+            this.walk = document.querySelector(".walkman")
+            this.walk.classList.add("fastfade")
+            this.walk.classList.remove("hidden")
         }
     }
 

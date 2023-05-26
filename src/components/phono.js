@@ -17,6 +17,7 @@ class Phono{
         }
         else{
             this.phono.classList.add("fadeout");
+            this.phono.classList.add("visually-hidden")
             this.rad = document.querySelector(".radio");
             this.rad.classList.add("fastfade");
             this.rad.classList.remove("hidden");

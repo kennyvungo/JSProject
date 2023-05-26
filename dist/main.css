@@ -179,8 +179,16 @@ p {
   place-items: center;
 }
 
+.text {
+  justify-self: start;
+  float: left;
+}
+
 .pho {
-  height: 300px;
+  margin-top: 50px;
+  margin-left: 400px;
+  float: right;
+  flex: 0 0 auto;
 }
 
 h2 {
@@ -191,6 +199,10 @@ h2 {
   padding-top: 10px;
   font-size: 60px;
   cursor: pointer;
+}
+
+div {
+  justify-content: flex-start;
 }
 
 .phonext {
@@ -207,7 +219,7 @@ h2 {
 }
 
 .slide-image {
-  width: 70%;
+  width: 50%;
   height: auto;
   animation: slide 5s alternate;
   /* Adjust the animation duration and iteration count as needed */
@@ -250,17 +262,95 @@ h2 {
   cursor: pointer;
 }
 
+.rad {
+  height: 100px;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.shake {
+  animation: shake 2s ease infinite;
+  animation-delay: 17.4s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .radnext {
   font-size: 50px;
   padding-left: 50px;
   cursor: pointer;
 }
 
+.changeColor {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-delay: 33.8s;
+  animation-duration: 2s;
+  background-size: cover;
+  background-repeat: repeat-y;
+  margin-bottom: 1px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
 html {
   font-family: "Courier New", Courier, monospace;
 }
 
-body {
+.root {
   background-color: #efeeea;
 }
 
@@ -301,6 +391,16 @@ h1 {
 }
 .hidden {
   display: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 #hidden {

@@ -24,6 +24,8 @@ class Radio{
 
     playAudio(playing){
         if (!playing){
+            document.querySelector(".rad").classList.add("shake")
+            document.querySelector(".root").classList.add("changeColor")
             this.audio.play();
             this.playing = true;
         }

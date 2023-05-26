@@ -3,6 +3,7 @@ import Phono from "./components/phono";
 import Record from "./components/record";
 import Radio from "./components/radio";
 import Ipod from "./components/ipod";
+import Walkman from "./components/walkman";
 
 
 document.addEventListener("DOMContentLoaded",() =>{
@@ -10,5 +11,6 @@ document.addEventListener("DOMContentLoaded",() =>{
     new Phono();
     new Radio();
     new Record();
+    new Walkman();
     new Ipod();
 })
