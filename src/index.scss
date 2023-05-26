@@ -1,19 +1,17 @@
-html{
+@import './styles/reset.css';
+@import './styles/home.scss';
+@import './styles/phono.scss';
+@import './styles/record.scss';
+@import './styles/ipod.scss';
+@import './styles/radio.scss';
+
+
+html {
     font-family: 'Courier New', Courier, monospace;
-
 }
 
-body{
-    background-color: #c2b49a;
-}
-.home{
-    color: white;
-    display: grid;
-    place-items: center;
-}
-p{
-    margin-top: 7vh;
-    font-size: 40px;
+body {
+    background-color: #efeeea;
 }
 
 .play {
@@ -21,33 +19,12 @@ p{
     font-size: 55px;
 }
 
-h1{
-    margin-top: 20vh;
-    font-size: 140px;
+h1 {
+    margin-top: 30vh;
+    font-size: 100px;
 }
 
-.typewriter{
-    overflow: hidden;
-    border-right: .07em solid white;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation:
-        typing 3.1s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-@keyframes typing {
-    from {width: 0}
-
-    to {width: 80%}
-}
-
-@keyframes blink-caret {
-    from,to {
-        border-color: transparent
-    }
-    50% {border-color: white;}
-}
-.fade{
+.fade {
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 1s;
@@ -55,8 +32,40 @@ h1{
     animation-fill-mode: forwards;
 }
 
-@keyframes fade-in{
-    from{opacity: 0;}
-    to{opacity: 1;}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+.fadeout {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.next{
+    font-size: 50px;
+    padding-left: 50px;
 }

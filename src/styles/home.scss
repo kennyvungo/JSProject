@@ -1,0 +1,44 @@
+
+.home {
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+p {
+    margin-top: 7vh;
+    font-size: 40px;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .07em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.1s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
