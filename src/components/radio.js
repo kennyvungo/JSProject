@@ -6,11 +6,13 @@ class Radio{
         this.playrad.addEventListener("click",this.handleClick)
         this.next = document.querySelector(".radnext");
         this.next.addEventListener("click",this.handleClick)
+        this.audio = new Audio('src/assets/blue.mp3');
+        this.playing = false;
     }
 
     handleClick(e){ 
         if(e.target === this.playrad){
-            this.playAudio();
+            this.playAudio(this.playing);
         }
         else{
             this.rad.classList.add("hidden")
@@ -18,9 +20,11 @@ class Radio{
         }
     }
 
-    playAudio(){
-        let audio = new Audio();
-        audio.play();
+    playAudio(playing){
+        if (!playing){
+            this.audio.play();
+            this.playing = true;
+        }
     }
 
 

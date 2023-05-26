@@ -14,7 +14,7 @@ class Record{
         }
         else{
             this.phono.classList.add("hidden");
-            document.querySelector(".radio").classList.remove("hidden")
+            document.querySelector(".ipod").classList.remove("hidden")
         }
     }
 

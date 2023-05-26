@@ -6,12 +6,14 @@ class Phono{
         this.playphono.addEventListener("click",this.handleClick);
         this.next = document.querySelector(".phonext");
         this.next.addEventListener("click",this.handleClick);
+        this.audio = new Audio('src/assets/lavieenrose.mp3');
+        this.playing = false;
     }
 
 
     handleClick(e){
         if(e.target === this.playphono){
-            this.playAudio();
+            this.playAudio(this.playing);
         }
         else{
             this.phono.classList.add("hidden");
@@ -19,9 +21,11 @@ class Phono{
         }
     }
 
-    playAudio(){
-        let audio = new Audio('src/assets/lavieenrose.mp3')
-        audio.play();
+    playAudio(playing){
+        if (!playing){
+            this.audio.play();
+            this.playing = true;
+        }
     }
 
 
