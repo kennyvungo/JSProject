@@ -13,14 +13,13 @@ class Radio{
             this.playAudio();
         }
         else{
-            console.log("kenny")
             this.rad.classList.add("hidden")
             document.querySelector(".record").classList.remove("hidden")
         }
     }
 
     playAudio(){
-        let audio = new Audio()
+        let audio = new Audio();
         audio.play();
     }
 

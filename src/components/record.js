@@ -1,8 +1,11 @@
 class Record{
     constructor(){
-
-
-
+        this.rec = document.querySelector(".record");
+        this.playrec = document.querySelector(".playrec");
+        this.handleClick = this.handleClick.bind(this);
+        this.playrec.addEventListener("click",this.handleClick);
+        this.next = document.querySelector(".recnext");
+        this.next.addEventListener("click",this.handleClick)
     }
 
     handleClick(e){
@@ -16,7 +19,8 @@ class Record{
     }
 
     playAudio(){
-
+        let audio = new Audio();
+        audio.play();
     }
 
 }
