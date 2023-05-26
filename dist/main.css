@@ -179,6 +179,10 @@ p {
   place-items: center;
 }
 
+.pho {
+  height: 300px;
+}
+
 h2 {
   font-size: 75px;
 }
@@ -195,6 +199,29 @@ h2 {
   cursor: pointer;
 }
 
+.slider {
+  width: 200px;
+  /* Adjust the width and height as per your requirements */
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 70%;
+  height: auto;
+  animation: slide 5s alternate;
+  /* Adjust the animation duration and iteration count as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    /* Adjust the distance of slide as needed */
+  }
+}
 .playrec {
   font-size: 60px;
   cursor: pointer;

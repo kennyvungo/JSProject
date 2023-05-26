@@ -6,8 +6,6 @@ import Ipod from "./components/ipod";
 
 
 document.addEventListener("DOMContentLoaded",() =>{
-
-    const rootEl = document.querySelector("root")
     new Home();
     new Phono();
     new Radio();
