@@ -263,7 +263,7 @@ div {
 }
 
 .rad {
-  height: 100px;
+  height: 300px;
 }
 
 .bounce2 {
@@ -323,7 +323,7 @@ div {
   height: 100%;
   width: 100%;
   background-color: white;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 15;
   animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: changeColor;
@@ -346,6 +346,18 @@ div {
     background-color: white;
   }
 }
+.playwalk {
+  padding-top: 10px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.walknext {
+  font-size: 50px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
 html {
   font-family: "Courier New", Courier, monospace;
 }

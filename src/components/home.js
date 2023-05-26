@@ -8,9 +8,9 @@ class Home{
 
     handleClick(){
         this.home.classList.add("fadeout");
-        // this.home.classList.add("hidden");
+        this.home.classList.add("visually-hidden");
         this.phono = document.querySelector(".phono")
-        this.phono.classList.add("fastfade")
+        this.phono.classList.add("fastfade");
         this.phono.classList.remove("hidden");
     }
 

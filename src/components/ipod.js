@@ -4,6 +4,8 @@ class Ipod{
         this.play = document.querySelector(".playipod");
         this.next = document.querySelector(".ipodnext");
         this.handleClick = this.handleClick.bind(this);
+        this.play.addEventListener("click",this.handleClick);
+        this.next.addEventListener("click",this.handleClick);
         // this.audio = new Audio()
         this.playing = false;
     }
@@ -13,8 +15,11 @@ class Ipod{
             this.playAudio(this.playing);
         }
         else{
-            this.ipo.classList.add("fastfade");
-            document.querySelector(".spot").classList.remove("hidden")
+            this.ipo.classList.add("fadeout");
+            this.ipo.classList.add("visually-hidden");
+            let spot =document.querySelector(".spot");
+            spot.classList.add("fastfade");
+            spot.classList.remove("hidden")
         }
     }
 

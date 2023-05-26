@@ -16,6 +16,7 @@ class Radio{
         }
         else{
             this.rad.classList.add("fadeout");
+            this.rad.classList.add("visually-hidden")
             this.rec = document.querySelector(".record");
             this.rec.classList.add("fastfade");
             this.rec.classList.remove("hidden");

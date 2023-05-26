@@ -5,6 +5,7 @@ constructor(){
     this.handleClick = this.handleClick.bind(this);
     this.play.addEventListener("click",this.handleClick);
     this.next = document.querySelector(".walknext");
+    this.next.addEventListener("click",this.handleClick);
     this.audio = new Audio()
 
 }
@@ -14,10 +15,11 @@ constructor(){
             this.playAudio(this.playing);
         }
         else{
-            this.rad.classList.add("fadeout");
-            this.rec = document.querySelector(".record");
-            this.rec.classList.add("fastfade");
-            this.rec.classList.remove("hidden");
+            this.walk.classList.add("fadeout");
+            this.walk.classList.add("visually-hidden");
+            this.ipod = document.querySelector(".ipod")
+            this.ipod.classList.add("fastfade");
+            this.ipod.classList.remove("hidden");
         }
     }
 
