@@ -13,7 +13,7 @@ class Record{
             this.playAudio();
         }
         else{
-            this.phono.classList.add("hidden");
+            this.rec.classList.add("hidden");
             document.querySelector(".ipod").classList.remove("hidden")
         }
     }

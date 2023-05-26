@@ -16,8 +16,10 @@ class Phono{
             this.playAudio(this.playing);
         }
         else{
-            this.phono.classList.add("hidden");
-            document.querySelector(".radio").classList.remove("hidden")
+            this.phono.classList.add("fadeout");
+            this.rad = document.querySelector(".radio");
+            this.rad.classList.add("fastfade");
+            this.rad.classList.remove("hidden");
         }
     }
 
@@ -25,6 +27,7 @@ class Phono{
         if (!playing){
             this.audio.play();
             this.playing = true;
+            document.querySelector(".phospeak").classList.remove("hidden");
         }
     }
 
