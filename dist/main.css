@@ -186,6 +186,24 @@ h2 {
 .playpho {
   padding-top: 10px;
   font-size: 60px;
+  cursor: pointer;
+}
+
+.phonext {
+  font-size: 50px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.playrad {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.radnext {
+  font-size: 50px;
+  padding-left: 50px;
+  cursor: pointer;
 }
 
 html {
@@ -199,6 +217,7 @@ body {
 .play {
   padding-top: 10px;
   font-size: 55px;
+  cursor: pointer;
 }
 
 h1 {
@@ -241,8 +260,4 @@ h1 {
   to {
     opacity: 0;
   }
-}
-.next {
-  font-size: 50px;
-  padding-left: 50px;
 }
