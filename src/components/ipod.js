@@ -13,7 +13,7 @@ class Ipod{
             this.playAudio(this.playing);
         }
         else{
-            this.ipo.classList.add("hidden");
+            this.ipo.classList.add("fastfade");
             document.querySelector(".spot").classList.remove("hidden")
         }
     }

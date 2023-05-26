@@ -13,8 +13,10 @@ class Record{
             this.playAudio();
         }
         else{
-            this.rec.classList.add("hidden");
-            document.querySelector(".ipod").classList.remove("hidden")
+            this.rec.classList.add("fadeout");
+            this.ipo = document.querySelector(".ipod")
+            this.ipo.classList.add("fastfade")
+            this.ipo.classList.remove("hidden")
         }
     }
 

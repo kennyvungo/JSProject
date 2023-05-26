@@ -15,8 +15,10 @@ class Radio{
             this.playAudio(this.playing);
         }
         else{
-            this.rad.classList.add("hidden")
-            document.querySelector(".record").classList.remove("hidden")
+            this.rad.classList.add("fadeout");
+            this.rec = document.querySelector(".record");
+            this.rec.classList.add("fastfade");
+            this.rec.classList.remove("hidden");
         }
     }
 
