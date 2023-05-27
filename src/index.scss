@@ -5,13 +5,16 @@
 @import './styles/ipod.scss';
 @import './styles/radio.scss';
 @import './styles/walkman.scss';
-
+@import './styles/spot.scss';
 html {
     font-family: 'Courier New', Courier, monospace;
 }
 
 .root {
     background-color: #efeeea;
+}
+.black{
+    background-color: black;
 }
 
 .play {

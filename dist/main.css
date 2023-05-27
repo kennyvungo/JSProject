@@ -141,7 +141,8 @@ table {
   \*************************************************************************************************************************************/
 .home {
   color: black;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
 }
 
@@ -163,7 +164,7 @@ p {
     width: 0;
   }
   to {
-    width: 80%;
+    width: 54%;
   }
 }
 @keyframes blink-caret {
@@ -185,8 +186,6 @@ p {
 }
 
 .pho {
-  margin-top: 50px;
-  margin-left: 400px;
   float: right;
   flex: 0 0 auto;
 }
@@ -234,9 +233,76 @@ div {
     /* Adjust the distance of slide as needed */
   }
 }
+.muzieknootjes {
+  display: flex;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+  color: black;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
 .playrec {
   font-size: 60px;
   cursor: pointer;
+}
+
+.rec {
+  height: 250px;
 }
 
 .recnext {
@@ -245,6 +311,38 @@ div {
   cursor: pointer;
 }
 
+.bounce-in {
+  animation: bounce-in 2s ease;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.spin {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .playipod {
   padding-top: 10px;
   font-size: 60px;
@@ -358,12 +456,98 @@ div {
   cursor: pointer;
 }
 
+.walk {
+  height: 800px;
+}
+
+.iphone {
+  margin: auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 700px;
+  position: relative;
+  box-shadow: 0px 20px 15px rgba(51, 51, 51, 0.2078431373);
+}
+
+.screen {
+  z-index: 10;
+  position: absolute;
+  background: url("https://i.pinimg.com/564x/ee/e9/b1/eee9b1c75a2d43f5a0d32a212d1a565f.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.icons {
+  margin-top: 40px;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.icons div {
+  margin: 10px;
+  z-index: 100;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(51, 51, 51, 0.2509803922);
+  cursor: pointer;
+  transform: transform 400ms ease-in-out;
+}
+
+#spotify {
+  background-image: url("../src/assets/spotifylogo.png");
+  background-size: cover;
+}
+
+#spotify:hover {
+  transform: scale(0.85);
+}
+
+.notch {
+  z-index: 50;
+  top: 0;
+  left: 62px;
+  position: absolute;
+  background: #000000;
+  width: 200px;
+  height: 30px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.camera {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #1e1f22;
+  background: rgba(68, 123, 181, 0.6509803922);
+}
+
+.speaker {
+  position: absolute;
+  right: 3.9rem;
+  width: 5.2rem;
+  height: 0.6rem;
+  background: #333333;
+  border-radius: 0.2rem;
+}
+
 html {
   font-family: "Courier New", Courier, monospace;
 }
 
 .root {
   background-color: #efeeea;
+}
+
+.black {
+  background-color: black;
 }
 
 .play {

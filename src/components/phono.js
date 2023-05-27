@@ -14,6 +14,7 @@ class Phono{
     handleClick(e){
         if(e.target === this.playphono){
             this.playAudio(this.playing);
+            document.querySelector(".muzieknootjes").classList.remove("hidden")
         }
         else{
             this.phono.classList.add("fadeout");

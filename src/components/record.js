@@ -6,11 +6,13 @@ class Record{
         this.playrec.addEventListener("click",this.handleClick);
         this.next = document.querySelector(".recnext");
         this.next.addEventListener("click",this.handleClick)
+        this.audio = new Audio('src/assets/lavieenrose.mp3');
     }
 
     handleClick(e){
-        if(e.target === this.playphono){
+        if(e.target === this.playrec){
             this.playAudio();
+            document.querySelector(".rec").classList.add("spin");
         }
         else{
             this.rec.classList.add("fadeout");
@@ -22,8 +24,7 @@ class Record{
     }
 
     playAudio(){
-        let audio = new Audio();
-        audio.play();
+        this.audio.play();
     }
 
 }
