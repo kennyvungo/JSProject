@@ -16,10 +16,10 @@ class Record{
         }
         else{
             this.rec.classList.add("fadeout");
-            this.rec.classList.add("visually-hidden");
+            this.rec.classList.add("hidden");
             this.walk = document.querySelector(".walkman")
             this.walk.classList.add("fastfade")
-            this.walk.classList.remove("visually-hidden")
+            this.walk.classList.remove("hidden")
         }
     }
 

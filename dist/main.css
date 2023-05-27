@@ -146,7 +146,7 @@ table {
   place-items: center;
 }
 
-p {
+.sub {
   margin-top: 7vh;
   font-size: 40px;
 }
@@ -220,7 +220,8 @@ div {
 .slide-image {
   width: 50%;
   height: auto;
-  animation: slide 5s alternate;
+  animation: slide 1s alternate;
+  animation-delay: 2s;
   /* Adjust the animation duration and iteration count as needed */
 }
 
@@ -229,7 +230,7 @@ div {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
     /* Adjust the distance of slide as needed */
   }
 }
@@ -435,13 +436,13 @@ div {
 
 @keyframes changeColor {
   0% {
-    background-color: white;
+    background-color: #efeeea;
   }
   50% {
     background-color: blue;
   }
   100% {
-    background-color: white;
+    background-color: #efeeea;
   }
 }
 .playwalk {
@@ -637,10 +638,6 @@ h1 {
   }
 }
 .hidden {
-  display: none;
-}
-
-.visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -669,4 +666,7 @@ h1 {
   to {
     opacity: 0;
   }
+}
+.pause {
+  font-size: 35px;
 }

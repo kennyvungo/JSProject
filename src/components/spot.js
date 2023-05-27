@@ -11,8 +11,8 @@ class Spot{
     handleClick(e){
         if(e.target === this.app){
             let screen = document.querySelector(".screen");
-            screen.classList.add("visually-hidden")
-            document.querySelector(".loading").classList.remove("visually-hidden")
+            screen.classList.add("hidden")
+            document.querySelector(".loading").classList.remove("hidden")
             setTimeout(this.renderLog,2000);
         }
         else if(e.target === this.player){
@@ -21,8 +21,8 @@ class Spot{
     }
 
     renderLog(){
-        document.querySelector(".loading").classList.add("visually-hidden");
-        document.querySelector(".player").classList.remove("visually-hidden");
+        document.querySelector(".loading").classList.add("hidden");
+        document.querySelector(".player").classList.remove("hidden");
 
     }
 

@@ -1,17 +1,16 @@
 class Home{
     constructor(){
-        this.home = document.querySelector(".home")
-        this.play = document.querySelector(".play")
         this.handleClick = this.handleClick.bind(this);
-        this.play.addEventListener("click",this.handleClick)
+        const play = document.querySelector(".play")
+        play.addEventListener("click",this.handleClick)
+        this.home = document.querySelector(".home")
+        this.phono = document.querySelector(".phono")
     }
 
     handleClick(){
-        this.home.classList.add("fadeout");
-        this.home.classList.add("visually-hidden");
-        this.phono = document.querySelector(".phono")
+        this.home.classList.add("fadeout", "hidden");
         this.phono.classList.add("fastfade");
-        this.phono.classList.remove("visually-hidden");
+        this.phono.classList.remove("hidden");
     }
 
 }

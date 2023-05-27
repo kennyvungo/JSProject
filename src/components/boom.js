@@ -1,25 +1,28 @@
 class Boom{
     constructor(){
-        this.rad = document.querySelector(".boom")
+        this.boom = document.querySelector(".boom")
         this.play = document.querySelector(".playboom");
+        this.next = document.querySelector(".boomnext");
+        this.ipod = document.querySelector(".ipod");
         this.handleClick = this.handleClick.bind(this);
         this.play.addEventListener("click",this.handleClick)
-        this.next = document.querySelector(".radnext");
         this.next.addEventListener("click",this.handleClick)
         this.audio = new Audio('src/assets/blue.mp3');
-        this.playing = false;
+        this.isPlaying = false;
     }
 
     handleClick(e){ 
         if(e.target === this.play){
-            this.playAudio(this.playing);
+            this.isPlaying ? this.stopAudio() : this.playAudio();
+
+
         }
-        else{
-            this.rad.classList.add("fadeout");
-            this.rad.classList.add("visually-hidden")
-            this.rec = document.querySelector(".record");
-            this.rec.classList.add("fastfade");
-            this.rec.classList.remove("visually-hidden");
+        else if (e.target === this.next){
+            this.boom.classList.add("fadeout");
+            this.boom.classList.add("hidden")
+            this.ipod.classList.add("fastfade");
+            this.ipod.classList.remove("hidden");
+            if(this.isPlaying) this.stopAudio();
         }
     }
 
@@ -28,8 +31,19 @@ class Boom{
             document.querySelector(".boombox").classList.add("shake")
             document.querySelector(".root").classList.add("changeColor")
             this.audio.play();
-            this.playing = true;
+            this.isPlaying = true;
+            this.play.innerText = "▐▐";
+            this.play.classList.add("pause")
+
         }
+    }
+    stopAudio(){
+        document.querySelector(".boombox").classList.remove("shake")
+        document.querySelector(".root").classList.remove("changeColor")
+        this.audio.pause();
+        this.isPlaying = false;
+        this.play.innerText = "▶";
+        this.play.classList.remove("pause")
     }
 
 

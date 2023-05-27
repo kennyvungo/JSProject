@@ -16,10 +16,10 @@ class Ipod{
         }
         else{
             this.ipo.classList.add("fadeout");
-            this.ipo.classList.add("visually-hidden");
+            this.ipo.classList.add("hidden");
             let spot =document.querySelector(".spotplay");
             spot.classList.add("fastfade");
-            spot.classList.remove("visually-hidden")
+            spot.classList.remove("hidden")
         }
     }
 

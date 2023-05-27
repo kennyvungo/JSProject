@@ -2,9 +2,10 @@ class Phono{
     constructor(){
         this.phono = document.querySelector(".phono");
         this.playphono = document.querySelector(".playpho");
-        this.handleClick = this.handleClick.bind(this);
-        this.playphono.addEventListener("click",this.handleClick);
         this.next = document.querySelector(".phonext");
+        this.handleClick = this.handleClick.bind(this);
+        this.rad = document.querySelector(".radio");
+        this.playphono.addEventListener("click",this.handleClick);
         this.next.addEventListener("click",this.handleClick);
         this.audio = new Audio('src/assets/lavieenrose.mp3');
         this.playing = false;
@@ -18,10 +19,9 @@ class Phono{
         }
         else{
             this.phono.classList.add("fadeout");
-            this.phono.classList.add("visually-hidden")
-            this.rad = document.querySelector(".radio");
+            this.phono.classList.add("hidden")
             this.rad.classList.add("fastfade");
-            this.rad.classList.remove("visually-hidden");
+            this.rad.classList.remove("hidden");
         }
     }
 

@@ -16,10 +16,10 @@ constructor(){
         }
         else{
             this.walk.classList.add("fadeout");
-            this.walk.classList.add("visually-hidden");
+            this.walk.classList.add("hidden");
             this.boom = document.querySelector(".boom")
             this.boom.classList.add("fastfade");
-            this.boom.classList.remove("visually-hidden");
+            this.boom.classList.remove("hidden");
         }
     }
 

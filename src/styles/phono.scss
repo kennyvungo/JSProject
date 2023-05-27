@@ -42,7 +42,8 @@ div{
 .slide-image {
     width: 50%;
     height: auto;
-    animation: slide 5s alternate;
+    animation: slide 1s alternate;
+    animation-delay: 2s;
     /* Adjust the animation duration and iteration count as needed */
 }
 
@@ -52,7 +53,7 @@ div{
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
         /* Adjust the distance of slide as needed */
     }
 }
