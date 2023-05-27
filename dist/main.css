@@ -575,6 +575,16 @@ div {
   height: 100%;
 }
 
+.playboom {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.boomnext {
+  font-size: 60px;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "SpotifyFont";
   src: url("/src/assets/fonts/Gotham.otf") format("opentype");

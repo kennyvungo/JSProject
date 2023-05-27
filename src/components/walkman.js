@@ -6,20 +6,20 @@ constructor(){
     this.play.addEventListener("click",this.handleClick);
     this.next = document.querySelector(".walknext");
     this.next.addEventListener("click",this.handleClick);
-    this.audio = new Audio()
+    this.audio = new Audio('src/assets/abba.mp3')
 
 }
 
     handleClick(e){ 
-        if(e.target === this.playrad){
+        if(e.target === this.play){
             this.playAudio(this.playing);
         }
         else{
             this.walk.classList.add("fadeout");
             this.walk.classList.add("visually-hidden");
-            this.ipod = document.querySelector(".ipod")
-            this.ipod.classList.add("fastfade");
-            this.ipod.classList.remove("visually-hidden");
+            this.boom = document.querySelector(".boom")
+            this.boom.classList.add("fastfade");
+            this.boom.classList.remove("visually-hidden");
         }
     }
 

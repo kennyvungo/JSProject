@@ -5,6 +5,7 @@ import Radio from "./components/radio";
 import Ipod from "./components/ipod";
 import Walkman from "./components/walkman";
 import Spot from "./components/spot";
+import Boom from "./components/boom";
 
 
 document.addEventListener("DOMContentLoaded",() =>{
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded",() =>{
     new Radio();
     new Record();
     new Walkman();
+    new Boom();
     new Ipod();
     new Spot();
 })
