@@ -19,7 +19,7 @@ constructor(){
             this.walk.classList.add("visually-hidden");
             this.ipod = document.querySelector(".ipod")
             this.ipod.classList.add("fastfade");
-            this.ipod.classList.remove("hidden");
+            this.ipod.classList.remove("visually-hidden");
         }
     }
 

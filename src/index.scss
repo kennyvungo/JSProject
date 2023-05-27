@@ -6,6 +6,12 @@
 @import './styles/radio.scss';
 @import './styles/walkman.scss';
 @import './styles/spot.scss';
+
+@font-face {
+    font-family: 'SpotifyFont';
+    src: url('/src/assets/fonts/Gotham.otf') format('opentype');
+}
+
 html {
     font-family: 'Courier New', Courier, monospace;
 }

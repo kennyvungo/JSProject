@@ -1,26 +1,23 @@
 class Spot{
     constructor(){
-        this.spot = document.querySelector(".spotify");
-        this.play = document.querySelector(".playspot");
         this.handleClick = this.handleClick.bind(this);
-        this.play.addEventListener("click",this.handleClick);
-        this.next = document.querySelector(".spotnext");
-        this.next.addEventListener("click",this.handleClick)
+        this.app = document.querySelector(".spotapp");
+        this.app.addEventListener("click",this.handleClick)
     }
 
     handleClick(e){
-        if(e.target === this.playphono){
-            this.playAudio();
-        }
-        else{
-            this.rec.classList.add("hidden");
-            document.querySelector(".spotplay").classList.remove("hidden")
+        if(e.target === this.app){
+            let screen = document.querySelector(".screen");
+            screen.classList.add("visually-hidden")
+            document.querySelector(".loading").classList.remove("visually-hidden")
+            setTimeout(this.renderLog,2000);
         }
     }
 
-    playAudio(){
-        let audio = new Audio();
-        audio.play();
+    renderLog(){
+        document.querySelector(".loading").classList.add("visually-hidden");
+        document.querySelector(".login").classList.remove("visually-hidden");
+
     }
 
 }

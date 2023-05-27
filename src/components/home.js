@@ -11,7 +11,7 @@ class Home{
         this.home.classList.add("visually-hidden");
         this.phono = document.querySelector(".phono")
         this.phono.classList.add("fastfade");
-        this.phono.classList.remove("hidden");
+        this.phono.classList.remove("visually-hidden");
     }
 
 }

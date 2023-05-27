@@ -19,7 +19,7 @@ class Record{
             this.rec.classList.add("visually-hidden");
             this.walk = document.querySelector(".walkman")
             this.walk.classList.add("fastfade")
-            this.walk.classList.remove("hidden")
+            this.walk.classList.remove("visually-hidden")
         }
     }
 

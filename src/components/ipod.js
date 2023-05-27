@@ -17,9 +17,9 @@ class Ipod{
         else{
             this.ipo.classList.add("fadeout");
             this.ipo.classList.add("visually-hidden");
-            let spot =document.querySelector(".spot");
+            let spot =document.querySelector(".spotplay");
             spot.classList.add("fastfade");
-            spot.classList.remove("hidden")
+            spot.classList.remove("visually-hidden")
         }
     }
 

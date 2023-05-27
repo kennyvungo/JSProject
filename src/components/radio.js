@@ -19,7 +19,7 @@ class Radio{
             this.rad.classList.add("visually-hidden")
             this.rec = document.querySelector(".record");
             this.rec.classList.add("fastfade");
-            this.rec.classList.remove("hidden");
+            this.rec.classList.remove("visually-hidden");
         }
     }
 
