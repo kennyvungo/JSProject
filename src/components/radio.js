@@ -6,13 +6,13 @@ class Radio{
         this.playrad.addEventListener("click",this.handleClick)
         this.next = document.querySelector(".radnext");
         this.next.addEventListener("click",this.handleClick)
-        this.audio = new Audio('src/assets/blue.mp3');
-        this.playing = false;
+        this.audio = new Audio('src/assets/country.mp3');
+        this.isPlaying = false;
     }
 
     handleClick(e){ 
         if(e.target === this.playrad){
-            this.playAudio(this.playing);
+            this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else{
             this.rad.classList.add("fadeout");
@@ -20,16 +20,21 @@ class Radio{
             this.rec = document.querySelector(".record");
             this.rec.classList.add("fastfade");
             this.rec.classList.remove("hidden");
+            if(this.isPlaying) this.stopAudio();
         }
     }
 
-    playAudio(playing){
-        if (!playing){
-            document.querySelector(".rad").classList.add("shake")
-            document.querySelector(".root").classList.add("changeColor")
+    playAudio(){
             this.audio.play();
-            this.playing = true;
-        }
+            this.isPlaying = true;
+            this.playrad.innerText = "▐▐";
+            this.playrad.classList.add("pause")
+    }
+    stopAudio(){
+        this.audio.pause();
+        this.isPlaying = false;
+        this.playrad.innerText = "▶";
+        this.playrad.classList.remove("pause")
     }
 
 

@@ -7,30 +7,38 @@ class Phono{
         this.rad = document.querySelector(".radio");
         this.playphono.addEventListener("click",this.handleClick);
         this.next.addEventListener("click",this.handleClick);
-        this.audio = new Audio('src/assets/lavieenrose.mp3');
-        this.playing = false;
+        this.audio = new Audio('src/assets/chopin.mp3');
+        this.isPlaying = false;
     }
 
 
     handleClick(e){
         if(e.target === this.playphono){
-            this.playAudio(this.playing);
-            document.querySelector(".muzieknootjes").classList.remove("hidden")
+            this.isPlaying ? this.stopAudio() : this.playAudio();
+            document.querySelector(".notes").classList.remove("hidden")
         }
         else{
             this.phono.classList.add("fadeout");
-            this.phono.classList.add("hidden")
+            this.phono.classList.add("hidden");
             this.rad.classList.add("fastfade");
             this.rad.classList.remove("hidden");
+            if(this.isPlaying) this.stopAudio();
         }
     }
 
-    playAudio(playing){
-        if (!playing){
+    playAudio(){
             this.audio.play();
-            this.playing = true;
+            this.isPlaying = true;
+            this.playphono.innerText = "▐▐";
+            this.playphono.classList.add("pause")
             document.querySelector(".phospeak").classList.remove("hidden");
-        }
+    }
+    stopAudio(){
+        this.audio.pause();
+        this.isPlaying = false;
+        this.playphono.innerText = "▶";
+        this.playphono.classList.remove("pause")
+        document.querySelector(".notes").classList.add("hidden")
     }
 
 

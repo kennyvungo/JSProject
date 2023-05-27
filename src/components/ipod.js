@@ -6,7 +6,7 @@ class Ipod{
         this.handleClick = this.handleClick.bind(this);
         this.play.addEventListener("click",this.handleClick);
         this.next.addEventListener("click",this.handleClick);
-        // this.audio = new Audio()
+        this.audio = new Audio('src/assets/stronger.mp3')
         this.playing = false;
     }
 

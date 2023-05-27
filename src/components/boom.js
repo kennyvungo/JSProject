@@ -14,8 +14,6 @@ class Boom{
     handleClick(e){ 
         if(e.target === this.play){
             this.isPlaying ? this.stopAudio() : this.playAudio();
-
-
         }
         else if (e.target === this.next){
             this.boom.classList.add("fadeout");

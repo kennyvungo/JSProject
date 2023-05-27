@@ -7,12 +7,13 @@ constructor(){
     this.next = document.querySelector(".walknext");
     this.next.addEventListener("click",this.handleClick);
     this.audio = new Audio('src/assets/abba.mp3')
+    this.isPlaying = false;
 
 }
 
     handleClick(e){ 
         if(e.target === this.play){
-            this.playAudio(this.playing);
+            this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else{
             this.walk.classList.add("fadeout");
@@ -23,11 +24,17 @@ constructor(){
         }
     }
 
-    playAudio(playing){
-        if (!playing){
+    playAudio(){
             this.audio.play();
-            this.playing = true;
-        }
+            this.isPlaying = true;
+            this.play.innerText = "▐▐";
+            this.play.classList.add("pause")
+    }
+    stopAudio(){
+        this.audio.pause();
+        this.isPlaying = false;
+        this.play.innerText = "▶";
+        this.play.classList.remove("pause")
     }
 
 

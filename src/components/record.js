@@ -7,6 +7,7 @@ class Record{
         this.next = document.querySelector(".recnext");
         this.next.addEventListener("click",this.handleClick)
         this.audio = new Audio('src/assets/lavieenrose.mp3');
+
     }
 
     handleClick(e){
@@ -25,6 +26,10 @@ class Record{
 
     playAudio(){
         this.audio.play();
+    }
+
+    stopAudio(){
+
     }
 
 }
