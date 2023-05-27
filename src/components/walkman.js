@@ -21,6 +21,7 @@ constructor(){
             this.boom = document.querySelector(".boom")
             this.boom.classList.add("fastfade");
             this.boom.classList.remove("hidden");
+            if(this.isPlaying) this.stopAudio();
         }
     }
 
