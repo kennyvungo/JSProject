@@ -9,4 +9,31 @@
     padding-left: 50px;
     cursor: pointer;
 }
+.centered{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+.cont{
+    background-color: #efeeea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.rect{
+    width: 300px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(164, 161, 161, 1) 73%);
+    border-radius: 40px;
+    border: 2px solid rgba(164, 161, 161, 1);
+    box-shadow: 2px 2px 3px 4px  lightgray;
+}
+
 

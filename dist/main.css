@@ -356,6 +356,30 @@ div {
   cursor: pointer;
 }
 
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cont {
+  background-color: #efeeea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.rect {
+  width: 300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 161, 161) 73%);
+  border-radius: 40px;
+  border: 2px solid rgb(164, 161, 161);
+  box-shadow: 2px 2px 3px 4px lightgray;
+}
+
 .playrad {
   font-size: 60px;
   cursor: pointer;
