@@ -15,7 +15,7 @@ class Phono{
     handleClick(e){
         if(e.target === this.playphono){
             this.isPlaying ? this.stopAudio() : this.playAudio();
-            document.querySelector(".notes").classList.remove("hidden")
+            document.querySelector(".notes").classList.remove("kindahidden")
         }
         else{
             this.phono.classList.add("fadeout");
@@ -31,14 +31,13 @@ class Phono{
             this.isPlaying = true;
             this.playphono.innerText = "▐▐";
             this.playphono.classList.add("pause")
-            document.querySelector(".phospeak").classList.remove("hidden");
     }
     stopAudio(){
         this.audio.pause();
         this.isPlaying = false;
         this.playphono.innerText = "▶";
         this.playphono.classList.remove("pause")
-        document.querySelector(".notes").classList.add("hidden")
+        document.querySelector(".notes").classList.add("kindahidden")
     }
 
 

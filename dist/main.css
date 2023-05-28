@@ -177,13 +177,16 @@ table {
 }
 .phono {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 760px;
-  width: 800px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.text {
-  width: 1000px;
+.heading {
+  margin-top: 10px;
+  font-size: 80px;
 }
 
 .right {
@@ -191,6 +194,10 @@ table {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.pho {
+  height: 425px;
 }
 
 h2 {
@@ -204,11 +211,6 @@ h2 {
 .playpho {
   font-size: 50px;
   cursor: pointer;
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .phonext {
@@ -805,6 +807,10 @@ html {
 
 .root {
   background-color: #efeeea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
 }
 
 .black {
@@ -877,5 +883,17 @@ h1 {
   }
 }
 .pause {
-  font-size: 35px;
+  font-size: 30px;
+}
+
+.bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.kindahidden {
+  visibility: hidden;
 }

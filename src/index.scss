@@ -19,6 +19,10 @@ html {
 
 .root {
     background-color: #efeeea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
 }
 .black{
     background-color: black;
@@ -92,6 +96,17 @@ h1 {
     }
 }
 .pause{
-    font-size: 35px;
+    font-size: 30px;
+}
+.bottom {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.kindahidden{
+    visibility:hidden;
 }
 
