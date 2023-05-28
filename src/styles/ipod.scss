@@ -1,12 +1,8 @@
 .playipod{
-    padding-top: 10px;
-    font-size: 60px;
     cursor: pointer;
 }
 
 .ipodnext{
-    font-size: 50px;
-    padding-left: 50px;
     cursor: pointer;
 }
 .centered{
@@ -56,7 +52,73 @@
     margin-top: 15px;
     border-radius: 10px;
     border: 7px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.menupage{
+    background-color: white;
+    width: 85%;
+    height: 44%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 7px solid black;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 15px;
+}
+.therest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.curplay{
+    background-color: white;
+    width: 85%;
+    height: 44%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 7px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+}
+
+.menus{
+    z-index: 20;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.album{
+    height: 100%;
+    width: 50%;
+}
+.bar{
+    display:flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    border: 1px outset gray;
+}
+.batt{
+    display: flex;
+    color: #6ac6fb;
+    justify-content: space-between;
+}
+.terry{
+    width: 15px;
+    height: 10px;
+    background-color: #82c65e;
+}
+
 .wheel{
     display: flex;
     height: 170px;
@@ -72,6 +134,13 @@
     font-size: 14px;
     font-weight: bold;
     color: gray;
+}
+.bar{
+    font-size: 12px;
+}
+.selected{
+    background-color: lightblue;
+
 }
 .inner{
     z-index: 10;
@@ -95,4 +164,40 @@
 }
 
 
+.apple{
+    height: 50px;
+}
+.menu{
+    cursor: pointer;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.playalb{
+    height: 120px;
+    width: 120px;
+}
+.songinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.smaller{
+    font-size: 12px;
+}
+.playerbar{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.endbar{
+    width: 120px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
