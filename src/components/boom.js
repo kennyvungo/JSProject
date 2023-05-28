@@ -18,10 +18,12 @@ class Boom{
         else if (e.target === this.next){
             this.boom.classList.add("fadeout");
             this.boom.classList.add("hidden")
-            this.ipod.classList.add("fastfade");
-            this.ipod.classList.remove("hidden");
             if(this.isPlaying) this.stopAudio();
+            setTimeout(this.reveal,2000);
         }
+    }
+    reveal(){
+        document.querySelector(".ipod").classList.remove("hidden")
     }
 
     playAudio(playing){

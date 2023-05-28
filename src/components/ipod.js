@@ -6,10 +6,12 @@ class Ipod{
         this.handleClick = this.handleClick.bind(this);
         this.play.addEventListener("click",this.handleClick);
         this.next.addEventListener("click",this.handleClick);
-        this.audio = new Audio('src/assets/stronger.mp3')
-        this.menu = document.querySelector(".menu")
+        this.audio = new Audio('src/assets/stronger.mp3');
+        this.menu = document.querySelector(".menu");
         this.menu.addEventListener("click",this.handleClick);
         this.isPlaying = false;
+        this.inner = document.querySelector(".inner");
+        this.inner.addEventListener("click",this.handleClick)
     }
 
     handleClick(e){
@@ -20,6 +22,10 @@ class Ipod{
             case this.menu:
                 document.querySelector(".apple").classList.remove("hidden")
                 setTimeout(this.loadMenu,2000);
+                break;
+            case this.inner:
+                document.querySelector(".menupage").classList.add("hidden");
+                document.querySelector(".curplay").classList.remove("hidden");
                 break;
             case this.next:
                 this.ipo.classList.add("fadeout");
