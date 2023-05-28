@@ -177,36 +177,42 @@ table {
 }
 .phono {
   display: flex;
-  place-items: center;
+  justify-content: space-between;
+  height: 760px;
+  width: 800px;
 }
 
 .text {
-  justify-self: start;
-  float: left;
+  width: 1000px;
 }
 
-.pho {
-  float: right;
-  flex: 0 0 auto;
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 h2 {
   font-size: 75px;
 }
 
+.backpho {
+  font-size: 50px;
+}
+
 .playpho {
-  padding-top: 10px;
-  font-size: 60px;
+  font-size: 50px;
   cursor: pointer;
 }
 
-div {
-  justify-content: flex-start;
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .phonext {
   font-size: 50px;
-  padding-left: 50px;
   cursor: pointer;
 }
 
@@ -221,7 +227,6 @@ div {
   width: 50%;
   height: auto;
   animation: slide 1s alternate;
-  animation-delay: 2s;
   /* Adjust the animation duration and iteration count as needed */
 }
 
