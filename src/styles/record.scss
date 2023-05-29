@@ -3,16 +3,18 @@
     cursor: pointer;
 }
 .rec{
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    position: fixed;
+    bottom: 10%;
 }
 .recnext{
     font-size: 50px;
     cursor: pointer;
 }
 
-.bounce-in {
-    animation: bounce-in 2s ease;
-}
 
 @keyframes bounce-in {
     0% {

@@ -198,7 +198,9 @@ table {
 
 .pho {
   height: 425px;
-  margin: auto;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
 }
 
 h2 {
@@ -315,6 +317,8 @@ h2 {
 .pholeft {
   font-size: 30px;
   display: flex;
+  position: fixed;
+  left: 5%;
   flex-direction: column;
   justify-content: center;
 }
@@ -322,6 +326,8 @@ h2 {
 .phoright {
   font-size: 30px;
   display: flex;
+  position: fixed;
+  right: 10%;
   flex-direction: column;
   justify-content: center;
 }
@@ -332,16 +338,17 @@ h2 {
 }
 
 .rec {
-  height: 250px;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  bottom: 10%;
 }
 
 .recnext {
   font-size: 50px;
   cursor: pointer;
-}
-
-.bounce-in {
-  animation: bounce-in 2s ease;
 }
 
 @keyframes bounce-in {
@@ -604,6 +611,9 @@ h2 {
 .rad {
   height: 300px;
   width: 300px;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
 }
 
 .bounce2 {
@@ -706,6 +716,19 @@ h2 {
 .radio {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.radhead {
+  margin-top: 10px;
+  font-size: 80px;
+}
+
+.radtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
 }
 
 .playwalk {
@@ -871,6 +894,15 @@ h2 {
   bottom: 0;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.boombox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: fixed;
+  bottom: 10%;
 }
 
 @font-face {

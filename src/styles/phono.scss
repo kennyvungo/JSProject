@@ -20,8 +20,10 @@
 
 
 .pho{
-height: 425px;
-margin: auto;
+    height: 425px;
+    display: flex;
+    position: fixed;
+    bottom: 10%;
 
 }
 h2{
@@ -144,6 +146,8 @@ h2{
 .pholeft{
     font-size: 30px;
     display: flex;
+    position: fixed;
+    left: 5%;
     flex-direction: column;
     justify-content: center;
 }
@@ -151,6 +155,8 @@ h2{
 .phoright{
     font-size: 30px;
     display: flex;
+    position: fixed;
+    right: 10%;
     flex-direction: column;
     justify-content: center;
 }
