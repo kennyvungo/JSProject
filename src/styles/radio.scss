@@ -1,10 +1,7 @@
-.playrad{
-    font-size: 60px;
-    cursor: pointer;
-}
+
 .rad{
     height: 300px;
-
+    width: 300px;
 }
 
 
@@ -79,11 +76,7 @@
     }
 }
 
-.radnext{
-    font-size: 50px;
-    padding-left: 50px;
-    cursor: pointer;
-}
+
 .changeColor{
     height: 100%;
     width: 100%;
@@ -112,4 +105,30 @@
     100% {
         background-color: #efeeea;
     }
+}
+.radbottom {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.backrad {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.radnext {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playrad {
+    font-size: 50px;
+    cursor: pointer;
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    
 }

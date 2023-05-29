@@ -198,6 +198,7 @@ table {
 
 .pho {
   height: 425px;
+  margin: auto;
 }
 
 h2 {
@@ -206,6 +207,7 @@ h2 {
 
 .backpho {
   font-size: 50px;
+  cursor: pointer;
 }
 
 .playpho {
@@ -304,8 +306,28 @@ h2 {
     opacity: 0;
   }
 }
+.bottompho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pholeft {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phoright {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .playrec {
-  font-size: 60px;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -315,7 +337,6 @@ h2 {
 
 .recnext {
   font-size: 50px;
-  padding-left: 50px;
   cursor: pointer;
 }
 
@@ -351,6 +372,19 @@ h2 {
     transform: rotate(360deg);
   }
 }
+.recbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.backrec {
+  font-size: 50px;
+  cursor: pointer;
+}
+
 .playipod {
   cursor: pointer;
 }
@@ -567,13 +601,9 @@ h2 {
   margin-right: 5px;
 }
 
-.playrad {
-  font-size: 60px;
-  cursor: pointer;
-}
-
 .rad {
   height: 300px;
+  width: 300px;
 }
 
 .bounce2 {
@@ -623,12 +653,6 @@ h2 {
     transform: translateY(0);
   }
 }
-.radnext {
-  font-size: 50px;
-  padding-left: 50px;
-  cursor: pointer;
-}
-
 .changeColor {
   height: 100%;
   width: 100%;
@@ -656,20 +680,59 @@ h2 {
     background-color: #efeeea;
   }
 }
+.radbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.backrad {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.radnext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playrad {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+
 .playwalk {
-  padding-top: 10px;
-  font-size: 60px;
+  font-size: 50px;
   cursor: pointer;
 }
 
 .walknext {
   font-size: 50px;
-  padding-left: 50px;
+  cursor: pointer;
+}
+
+.backwalk {
+  font-size: 50px;
   cursor: pointer;
 }
 
 .walk {
   height: 800px;
+}
+
+.walkbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .iphone {
@@ -788,13 +851,26 @@ h2 {
 }
 
 .playboom {
-  font-size: 60px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backboom {
+  font-size: 50px;
   cursor: pointer;
 }
 
 .boomnext {
-  font-size: 60px;
+  font-size: 50px;
   cursor: pointer;
+}
+
+.boombottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 @font-face {

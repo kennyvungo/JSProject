@@ -21,6 +21,7 @@
 
 .pho{
 height: 425px;
+margin: auto;
 
 }
 h2{
@@ -28,13 +29,12 @@ h2{
 }
 .backpho{
     font-size: 50px;
+    cursor: pointer;
 }
 .playpho{
     font-size: 50px;
     cursor: pointer;
 }
-
-
 
 .phonext {
     font-size: 50px;
@@ -133,4 +133,24 @@ h2{
         transform: scale(1.5) translate(100%, -100%);
         opacity: 0;
     }
+}
+
+.bottompho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pholeft{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phoright{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

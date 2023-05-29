@@ -15,13 +15,15 @@ constructor(){
         if(e.target === this.play){
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
-        else{
+        else if(e.target === this.next){
             this.walk.classList.add("fadeout");
             this.walk.classList.add("hidden");
             this.boom = document.querySelector(".boom")
             this.boom.classList.add("fastfade");
             this.boom.classList.remove("hidden");
             if(this.isPlaying) this.stopAudio(); 
+            document.querySelector(".walkbottom").classList.add("hidden")
+            document.querySelector(".boombottom").classList.remove("hidden")
         }
     }
 

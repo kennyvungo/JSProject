@@ -14,13 +14,15 @@ class Record{
         if(e.target === this.playrec){
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
-        else{
+        else if (e.target === this.next){
             this.rec.classList.add("fadeout");
             this.rec.classList.add("hidden");
             this.walk = document.querySelector(".walkman")
             this.walk.classList.add("fastfade")
             this.walk.classList.remove("hidden")
             if(this.isPlaying) this.stopAudio();
+            document.querySelector(".recbottom").classList.add("hidden")
+            document.querySelector(".walkbottom").classList.remove("hidden")
         }
     }
 

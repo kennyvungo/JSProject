@@ -23,6 +23,8 @@ class Phono{
             this.rad.classList.add("fastfade");
             this.rad.classList.remove("hidden");
             if(this.isPlaying) this.stopAudio();
+            document.querySelector(".bottom").classList.add("hidden")
+            document.querySelector(".radbottom").classList.remove("hidden")
         }
     }
 
@@ -31,6 +33,14 @@ class Phono{
             this.isPlaying = true;
             this.playphono.innerText = "▐▐";
             this.playphono.classList.add("pause")
+            document.querySelector(".pholeft").classList.remove("kindahidden")
+            document.querySelector(".pholeft").classList.add("fade")
+            document.querySelector(".heading").classList.add("fastfade")
+            document.querySelector(".heading").classList.remove("kindahidden")
+            document.querySelector(".phoright").classList.add("fade")
+            document.querySelector(".phoright").classList.remove("kindahidden")
+
+            
     }
     stopAudio(){
         this.audio.pause();

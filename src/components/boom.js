@@ -19,13 +19,9 @@ class Boom{
             this.boom.classList.add("fadeout");
             this.boom.classList.add("hidden")
             if(this.isPlaying) this.stopAudio();
-            setTimeout(this.reveal,2000);
+            document.querySelector(".ipod").classList.remove("hidden")
         }
     }
-    reveal(){
-        document.querySelector(".ipod").classList.remove("hidden")
-    }
-
     playAudio(playing){
         if (!playing){
             document.querySelector(".boombox").classList.add("shake")
