@@ -33,6 +33,11 @@ html {
     font-size: 55px;
     cursor: pointer;
 }
+.play:hover{
+    font-size: 60px;
+    color: darkgray;
+
+}
 
 h1 {
     margin-top: 30vh;
@@ -97,6 +102,10 @@ h1 {
 }
 .pause{
     font-size: 30px;
+}
+.pause:hover{
+    font-size: 33px;
+    color: darkgray;
 }
 .bottom {
     display: flex;

@@ -217,9 +217,19 @@ h2 {
   cursor: pointer;
 }
 
+.playpho:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
 .phonext {
   font-size: 50px;
   cursor: pointer;
+}
+
+.phonext:hover {
+  font-size: 53px;
+  color: darkgray;
 }
 
 .slider {
@@ -337,15 +347,6 @@ h2 {
   cursor: pointer;
 }
 
-.rec {
-  display: flex;
-  justify-content: center;
-  height: 350px;
-  width: 350px;
-  position: fixed;
-  bottom: 10%;
-}
-
 .recnext {
   font-size: 50px;
   cursor: pointer;
@@ -390,6 +391,40 @@ h2 {
 .backrec {
   font-size: 50px;
   cursor: pointer;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rechead {
+  margin-top: 10px;
+  font-size: 80px;
+}
+
+.rec {
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  bottom: 10%;
+}
+
+.backrec:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playrec:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.recnext:hover {
+  font-size: 53px;
+  color: darkgray;
 }
 
 .playipod {
@@ -713,6 +748,21 @@ h2 {
   cursor: pointer;
 }
 
+.backrad:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playrad:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.radnext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
 .radio {
   display: flex;
   flex-direction: column;
@@ -746,8 +796,26 @@ h2 {
   cursor: pointer;
 }
 
+.backwalk:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playwalk:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.walknext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
 .walk {
   height: 800px;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
 }
 
 .walkbottom {
@@ -756,6 +824,18 @@ h2 {
   bottom: 0;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.walkman {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.walkhead {
+  margin-top: 10px;
+  font-size: 80px;
 }
 
 .iphone {
@@ -883,8 +963,26 @@ h2 {
   cursor: pointer;
 }
 
+.backboom:hover {
+  font-size: 53px;
+  color: darkgray;
+  cursor: pointer;
+}
+
 .boomnext {
   font-size: 50px;
+  cursor: pointer;
+}
+
+.boomnext:hover {
+  font-size: 53px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.playboom:hover {
+  font-size: 53px;
+  color: darkgray;
   cursor: pointer;
 }
 
@@ -903,6 +1001,17 @@ h2 {
   height: 300px;
   position: fixed;
   bottom: 10%;
+}
+
+.boom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boomhead {
+  margin-top: 10px;
+  font-size: 80px;
 }
 
 @font-face {
@@ -929,6 +1038,11 @@ html {
   padding-top: 10px;
   font-size: 55px;
   cursor: pointer;
+}
+
+.play:hover {
+  font-size: 60px;
+  color: darkgray;
 }
 
 h1 {
@@ -992,6 +1106,11 @@ h1 {
 }
 .pause {
   font-size: 30px;
+}
+
+.pause:hover {
+  font-size: 33px;
+  color: darkgray;
 }
 
 .bottom {

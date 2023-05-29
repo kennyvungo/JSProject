@@ -2,10 +2,12 @@ class Record{
     constructor(){
         this.rec = document.querySelector(".record");
         this.playrec = document.querySelector(".playrec");
+        this.back = document.querySelector(".backrec");
+        this.next = document.querySelector(".recnext");
         this.handleClick = this.handleClick.bind(this);
         this.playrec.addEventListener("click",this.handleClick);
-        this.next = document.querySelector(".recnext");
         this.next.addEventListener("click",this.handleClick)
+        this.back.addEventListener("click",this.handleClick)
         this.audio = new Audio('src/assets/lavieenrose.mp3');
         this.isPlaying = false;
     }
@@ -23,6 +25,14 @@ class Record{
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".recbottom").classList.add("hidden")
             document.querySelector(".walkbottom").classList.remove("hidden")
+        }
+        else if (e.target === this.back){
+            this.rec.classList.add("hidden");
+            document.querySelector(".radio").classList.remove("hidden")
+            document.querySelector(".radio").classList.remove("fadeout")
+            document.querySelector(".recbottom").classList.add("hidden")
+            document.querySelector(".radbottom").classList.remove("hidden")
+            if(this.isPlaying) this.stopAudio();
         }
     }
 

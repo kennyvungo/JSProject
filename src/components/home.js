@@ -11,6 +11,7 @@ class Home{
         this.home.classList.add("fadeout", "hidden");
         this.phono.classList.add("fastfade");
         this.phono.classList.remove("hidden");
+        document.querySelector(".bottom").classList.remove("hidden")
     }
 
 }

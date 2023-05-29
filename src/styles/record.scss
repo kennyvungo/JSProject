@@ -2,14 +2,7 @@
     font-size: 50px;
     cursor: pointer;
 }
-.rec{
-    display: flex;
-    justify-content: center;
-    height: 350px;
-    width: 350px;
-    position: fixed;
-    bottom: 10%;
-}
+
 .recnext{
     font-size: 50px;
     cursor: pointer;
@@ -61,4 +54,37 @@
 .backrec{
     font-size: 50px;
     cursor: pointer;
+}
+
+.record{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rechead{
+    margin-top: 10px;
+    font-size: 80px;
+}
+
+.rec {
+    height: 350px;
+    width: 350px;
+    position: fixed;
+    bottom: 10%;
+}
+.backrec:hover {
+    font-size: 53px;
+    color: darkgray;
+}
+
+.playrec:hover {
+    font-size: 53px;
+    color: darkgray;
+}
+
+.recnext:hover {
+    font-size: 53px;
+    color: darkgray;
 }

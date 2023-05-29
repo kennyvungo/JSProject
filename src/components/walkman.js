@@ -2,10 +2,12 @@ class Walkman{
 constructor(){
     this.walk = document.querySelector(".walkman");
     this.play = document.querySelector(".playwalk");
+    this.next = document.querySelector(".walknext");
+    this.back = document.querySelector(".backwalk");
     this.handleClick = this.handleClick.bind(this);
     this.play.addEventListener("click",this.handleClick);
-    this.next = document.querySelector(".walknext");
     this.next.addEventListener("click",this.handleClick);
+    this.back.addEventListener("click",this.handleClick);
     this.audio = new Audio('src/assets/abba.mp3')
     this.isPlaying = false;
 
@@ -24,6 +26,14 @@ constructor(){
             if(this.isPlaying) this.stopAudio(); 
             document.querySelector(".walkbottom").classList.add("hidden")
             document.querySelector(".boombottom").classList.remove("hidden")
+        }
+        else if(e.target === this.back){
+            this.walk.classList.add("hidden");
+            document.querySelector(".record").classList.remove("hidden");
+            document.querySelector(".record").classList.remove("fadeout");
+            document.querySelector(".walkbottom").classList.add("hidden")
+            document.querySelector(".recbottom").classList.remove("hidden")
+            if(this.isPlaying) this.stopAudio();
         }
     }
 
