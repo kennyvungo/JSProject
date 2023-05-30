@@ -16,7 +16,6 @@ class Ipod{
         this.inner.addEventListener("click",this.handleClick);
         this.back = document.querySelector(".back");
         this.back.addEventListener("click",this.handleClick);
-        this.int = setInterval(this.slideAlb,2000);
     }
 
     handleClick(e){
@@ -26,6 +25,7 @@ class Ipod{
                 break;
             case this.menu:
                 document.querySelector(".apple").classList.remove("hidden")
+                this.int = setInterval(this.slideAlb,2000);
                 setTimeout(this.loadMenu,2000);
                 break;
             case this.inner:
@@ -74,8 +74,8 @@ class Ipod{
 
 
     slideAlb(){
-        console.log(index);
         document.querySelector(`.album${CSS.escape(index)}`).classList.add("hidden");
+        document.querySelector(`.album${CSS.escape(index)}`).classList.remove("fastfade");
         index ++;
         if(index > 4) index = 0;
         document.querySelector(`.album${CSS.escape(index)}`).classList.remove("hidden");

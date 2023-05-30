@@ -100,22 +100,27 @@
 .album0{
     height: 100%;
     width: 50%;
+    z-index: 5;
 }
 .album1 {
     height: 100%;
     width: 50%;
+    z-index: 6;
 }
 .album2 {
     height: 100%;
     width: 50%;
+    z-index: 7;
 }
 .album3 {
     height: 100%;
     width: 50%;
+    z-index: 8;
 }
 .album4 {
     height: 100%;
     width: 50%;
+    z-index: 9;
 }
 
 
@@ -170,6 +175,12 @@
     border: 1px solid gray;
     cursor: pointer;
 }
+.menu:hover{
+    color: white;
+}
+.playipod:hover{
+    color: white;
+}
 .centerrow{
     display: flex;
     justify-content: space-evenly;
@@ -178,8 +189,14 @@
 .back{
     margin-right: 10px;
 }
+.back:hover{
+    color: white;
+}
 .forward{
     margin-left: 10px;
+}
+.forward:hover{
+    color: white;
 }
 
 

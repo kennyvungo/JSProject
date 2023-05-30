@@ -17,8 +17,10 @@ class Radio{
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else if (e.target === this.next){
-            this.rad.classList.add("fadeout");
-            this.rad.classList.add("hidden")
+            // this.rad.classList.add("hidden")
+            this.rad.classList.remove("fastfade");
+            this.rad.classList.add("slideleft");
+            setTimeout(this.hide,700)
             this.rec = document.querySelector(".record");
             this.rec.classList.add("fastfade");
             this.rec.classList.remove("hidden");
@@ -35,7 +37,11 @@ class Radio{
             if(this.isPlaying) this.stopAudio();
         }
     }
-
+    hide(){
+        document.querySelector(".radio").classList.add("hidden");
+        document.querySelector(".radio").classList.remove("slideleft");
+    }
+    
     playAudio(){
             this.audio.play();
             this.isPlaying = true;

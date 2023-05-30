@@ -178,7 +178,6 @@ table {
 .phono {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -321,7 +320,7 @@ h2 {
 }
 .bottompho {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-family: "Poiret One", cursive;
 }
@@ -329,9 +328,6 @@ h2 {
 .pholeft {
   font-size: 30px;
   display: flex;
-  position: fixed;
-  top: 40%;
-  left: 3%;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 15px;
@@ -340,7 +336,6 @@ h2 {
 .phoright {
   font-size: 30px;
   display: flex;
-  position: fixed;
   right: 10%;
   top: 40%;
   flex-direction: column;
@@ -357,6 +352,18 @@ p {
   font-size: 40px;
 }
 
+.slideleft {
+  animation: slidelef 2s forwards;
+}
+
+@keyframes slidelef {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
 .playrec {
   font-size: 50px;
   cursor: pointer;
@@ -560,26 +567,31 @@ p {
 .album0 {
   height: 100%;
   width: 50%;
+  z-index: 5;
 }
 
 .album1 {
   height: 100%;
   width: 50%;
+  z-index: 6;
 }
 
 .album2 {
   height: 100%;
   width: 50%;
+  z-index: 7;
 }
 
 .album3 {
   height: 100%;
   width: 50%;
+  z-index: 8;
 }
 
 .album4 {
   height: 100%;
   width: 50%;
+  z-index: 9;
 }
 
 .bar {
@@ -637,6 +649,14 @@ p {
   cursor: pointer;
 }
 
+.menu:hover {
+  color: white;
+}
+
+.playipod:hover {
+  color: white;
+}
+
 .centerrow {
   display: flex;
   justify-content: space-evenly;
@@ -647,8 +667,16 @@ p {
   margin-right: 10px;
 }
 
+.back:hover {
+  color: white;
+}
+
 .forward {
   margin-left: 10px;
+}
+
+.forward:hover {
+  color: white;
 }
 
 .apple {

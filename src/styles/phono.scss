@@ -1,7 +1,7 @@
 .phono{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     align-items: center;
     width: 100%;
     height: 100%;
@@ -147,17 +147,15 @@ h2{
 
 .bottompho{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: 'Poiret One', cursive;
 }
 
+
 .pholeft{
     font-size: 30px;
     display: flex;
-    position: fixed;
-    top: 40%;
-    left: 3%;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 15px;
@@ -166,7 +164,6 @@ h2{
 .phoright{
     font-size: 30px;
     display: flex;
-    position: fixed;
     right: 10%;
     top: 40%;
     flex-direction: column;
@@ -180,4 +177,18 @@ p{
 .subheading{
 font-family: 'Poiret One',cursive;
 font-size: 40px;
+}
+
+.slideleft{
+        animation: slidelef 2s forwards;
+}
+
+@keyframes slidelef {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: -100%;
+    }
 }
