@@ -18,11 +18,9 @@ constructor(){
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else if(e.target === this.next){
-            this.walk.classList.add("fadeout");
-            this.walk.classList.add("hidden");
-            this.boom = document.querySelector(".boom")
-            this.boom.classList.add("fastfade");
-            this.boom.classList.remove("hidden");
+            this.walk.classList.remove("radslidein");
+            this.walk.classList.add("radslideleft");
+            setTimeout(this.hide,1000);
             if(this.isPlaying) this.stopAudio(); 
             document.querySelector(".walkbottom").classList.add("hidden")
             document.querySelector(".boombottom").classList.remove("hidden")
@@ -37,6 +35,13 @@ constructor(){
         }
     }
 
+    hide(){
+        document.querySelector(".walkman").classList.add("hidden");
+        document.querySelector(".walkman").classList.remove("radslideleft");
+        this.boom = document.querySelector(".boom");
+        this.boom.classList.add("radslidein");
+        this.boom.classList.remove("hidden");
+    }
     playAudio(){
             this.audio.play();
             this.isPlaying = true;

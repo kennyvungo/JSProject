@@ -18,10 +18,10 @@ class Boom{
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else if (e.target === this.next){
-            this.boom.classList.add("fadeout");
-            this.boom.classList.add("hidden")
+            this.boom.classList.remove("radslidein");
+            this.boom.classList.add("radslideleft");
+            setTimeout(this.hide,1000);
             if(this.isPlaying) this.stopAudio();
-            document.querySelector(".ipod").classList.remove("hidden")
             document.querySelector(".boombottom").classList.add("hidden")
         }
         else if(e.target === this.back){
@@ -33,6 +33,14 @@ class Boom{
             if(this.isPlaying) this.stopAudio();
 
         }
+    }
+
+    hide(){
+        document.querySelector(".boom").classList.add("hidden");
+        document.querySelector(".boom").classList.remove("radslideleft");
+        document.querySelector(".ipod").classList.add("radslidein");
+        document.querySelector(".ipod").classList.remove("hidden");
+
     }
     playAudio(playing){
         if (!playing){

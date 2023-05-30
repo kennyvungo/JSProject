@@ -19,11 +19,8 @@ class Radio{
         else if (e.target === this.next){
             // this.rad.classList.add("hidden")
             this.rad.classList.remove("fastfade");
-            this.rad.classList.add("slideleft");
-            setTimeout(this.hide,700)
-            this.rec = document.querySelector(".record");
-            this.rec.classList.add("fastfade");
-            this.rec.classList.remove("hidden");
+            this.rad.classList.add("radslideleft");
+            setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".radbottom").classList.add("hidden")
             document.querySelector(".recbottom").classList.remove("hidden")
@@ -39,7 +36,9 @@ class Radio{
     }
     hide(){
         document.querySelector(".radio").classList.add("hidden");
-        document.querySelector(".radio").classList.remove("slideleft");
+        document.querySelector(".radio").classList.remove("radslideleft");
+        document.querySelector(".record").classList.add("radslidein");
+        document.querySelector(".record").classList.remove("hidden");
     }
     
     playAudio(){

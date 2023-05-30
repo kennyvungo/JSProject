@@ -17,11 +17,10 @@ class Record{
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else if (e.target === this.next){
-            this.rec.classList.add("fadeout");
-            this.rec.classList.add("hidden");
-            this.walk = document.querySelector(".walkman")
-            this.walk.classList.add("fastfade")
-            this.walk.classList.remove("hidden")
+            this.rec.classList.remove("fastfade");
+            this.rec.classList.remove("radslidein")
+            this.rec.classList.add("slideleft");
+            setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".recbottom").classList.add("hidden")
             document.querySelector(".walkbottom").classList.remove("hidden")
@@ -36,6 +35,14 @@ class Record{
         }
     }
 
+    hide(){
+
+        document.querySelector(".record").classList.add("hidden");
+        document.querySelector(".record").classList.remove("slideleft");
+        this.walk = document.querySelector(".walkman")
+        this.walk.classList.add("radslidein")
+        this.walk.classList.remove("hidden")
+    }
     playAudio(){
         this.audio.play();
         document.querySelector(".rechead").classList.remove("kindahidden")

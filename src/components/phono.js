@@ -21,8 +21,6 @@ class Phono{
             this.phono.classList.add("slideleft");
             // this.phono.classList.add("hidden");
             setTimeout(this.hide,700)
-            this.rad.classList.add("fastfade");
-            this.rad.classList.remove("hidden");
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".bottom").classList.add("hidden")
             document.querySelector(".radbottom").classList.remove("hidden")
@@ -31,6 +29,8 @@ class Phono{
     hide(){
         document.querySelector(".phono").classList.add("hidden");
         document.querySelector(".phono").classList.remove("slideleft");
+        document.querySelector(".radio").classList.add("radslidein");
+        document.querySelector(".radio").classList.remove("hidden");
     }
 
     playAudio(){
@@ -38,8 +38,8 @@ class Phono{
             this.isPlaying = true;
             this.playphono.innerText = "▐▐";
             this.playphono.classList.add("pause")
-            // document.querySelector(".pholeft").classList.remove("kindahidden")
-            // document.querySelector(".pholeft").classList.add("fade")
+            document.querySelector(".pholeft").classList.remove("kindahidden")
+            document.querySelector(".pholeft").classList.add("fade")
             document.querySelector(".heading").classList.add("fastfade")
             document.querySelector(".heading").classList.remove("kindahidden")
             document.querySelector(".subheading").classList.add("fastfade")

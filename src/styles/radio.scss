@@ -169,3 +169,15 @@
     font-family: 'Poiret One', cursive;
     font-size: 40px;
 }
+.radslideleft{
+    animation: radslidelef 2s forwards;
+}
+@keyframes radslidelef {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: -200%;
+    }
+}

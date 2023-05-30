@@ -6,12 +6,10 @@ import Ipod from "./components/ipod";
 import Walkman from "./components/walkman";
 import Spot from "./components/spot";
 import Boom from "./components/boom";
-import Player from "./components/player";
 
 
 document.addEventListener("DOMContentLoaded",() =>{
     new Home();
-    new Player();
     new Phono();
     new Radio();
     new Record();
