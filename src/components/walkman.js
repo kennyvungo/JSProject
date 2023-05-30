@@ -42,6 +42,13 @@ constructor(){
             this.isPlaying = true;
             this.play.innerText = "▐▐";
             this.play.classList.add("pause")
+            document.querySelector(".walkhead").classList.remove("kindahidden")
+            document.querySelector(".walkhead").classList.add("fastfade")
+            document.querySelector(".subwalk").classList.remove("kindahidden")
+            document.querySelector(".subwalk").classList.add("fastfade")
+            document.querySelector(".walktext").classList.remove("kindahidden")
+            document.querySelector(".walktext").classList.add("fade")
+
     }
     stopAudio(){
         this.audio.pause();

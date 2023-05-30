@@ -42,6 +42,12 @@ class Boom{
             this.isPlaying = true;
             this.play.innerText = "▐▐";
             this.play.classList.add("pause")
+            document.querySelector(".boomhead").classList.remove("kindahidden")
+            document.querySelector(".boomhead").classList.add("fastfade")
+            document.querySelector(".subboom").classList.remove("kindahidden")
+            document.querySelector(".subboom").classList.add("fastfade")
+            document.querySelector(".boomtext").classList.remove("kindahidden")
+            document.querySelector(".boomtext").classList.add("fade")
 
         }
     }

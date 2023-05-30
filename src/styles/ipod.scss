@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .rect{
@@ -48,7 +48,6 @@
     background-color: rgb(54, 52, 52);
     width: 85%;
     height: 44%;
-    // margin-left: 21px;
     margin-top: 15px;
     border-radius: 10px;
     border: 7px solid black;
@@ -202,3 +201,24 @@
     margin-right: 5px;
 }
 
+.ipodhead {
+    margin-top: 10px;
+    font-size: 80px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.ipodtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+}
+
+.back{
+    cursor: pointer;
+}
+.subipod{
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+}

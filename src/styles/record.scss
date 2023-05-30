@@ -64,6 +64,7 @@
     
 }
 .rechead{
+    font-family: 'Cormorant Garamond', serif;
     margin-top: 10px;
     font-size: 80px;
 }
@@ -89,10 +90,16 @@
     color: darkgray;
 }
 
+.subrec{
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+}
+
 .rectext{
     display: flex;
     font-size: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poiret One', cursive;
 }

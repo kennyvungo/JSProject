@@ -11,7 +11,9 @@ class Ipod{
         this.menu.addEventListener("click",this.handleClick);
         this.isPlaying = false;
         this.inner = document.querySelector(".inner");
-        this.inner.addEventListener("click",this.handleClick)
+        this.inner.addEventListener("click",this.handleClick);
+        this.back = document.querySelector(".back");
+        this.back.addEventListener("click",this.handleClick);
     }
 
     handleClick(e){
@@ -30,9 +32,17 @@ class Ipod{
             case this.next:
                 this.ipo.classList.add("fadeout");
                 this.ipo.classList.add("hidden");
-                let spot =document.querySelector(".spotplay");
+                let spot = document.querySelector(".spotplay");
                 spot.classList.add("fastfade");
                 spot.classList.remove("hidden")
+                if(this.isPlaying) this.stopAudio();
+                break;
+            case this.back:
+                this.ipo.classList.add("hidden");
+                document.querySelector(".boom").classList.remove("hidden");
+                document.querySelector(".boom").classList.remove("fadeout");
+                document.querySelector(".boom").classList.add("fastfade")
+                document.querySelector(".boombottom").classList.remove("hidden")
                 if(this.isPlaying) this.stopAudio();
                 break;
         }
@@ -41,6 +51,12 @@ class Ipod{
     playAudio(){
             this.audio.play();
             this.isPlaying = true;
+            document.querySelector(".ipodhead").classList.add("fastfade")
+            document.querySelector(".ipodhead").classList.remove("kindahidden")
+            document.querySelector(".subipod").classList.add("fastfade")
+            document.querySelector(".subipod").classList.remove("kindahidden")
+            document.querySelector(".ipodtext").classList.add("fade")
+            document.querySelector(".ipodtext").classList.remove("kindahidden")
     }
     stopAudio(){
         this.audio.pause();

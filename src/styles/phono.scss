@@ -8,6 +8,7 @@
 }
 .heading{
     margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 80px;
 }
 
@@ -148,17 +149,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poiret One', cursive;
 }
 
 .pholeft{
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     position: fixed;
     top: 40%;
     left: 3%;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .phoright{
@@ -169,8 +171,13 @@ h2{
     top: 40%;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 p{
     padding: 8px;
+}
+.subheading{
+font-family: 'Poiret One',cursive;
+font-size: 40px;
 }
