@@ -42,7 +42,12 @@ class Radio{
             this.playrad.innerText = "▐▐";
             this.playrad.classList.add("pause")
             document.querySelector(".radhead").classList.remove("kindahidden")
+            document.querySelector(".radhead").classList.add("fastfade")
+            document.querySelector(".subrad").classList.remove("kindahidden")
+            document.querySelector(".subrad").classList.add("fastfade")
             document.querySelector(".radtext").classList.remove("kindahidden")
+            document.querySelector(".radtext").classList.add("fade")
+
     }
     stopAudio(){
         this.audio.pause();

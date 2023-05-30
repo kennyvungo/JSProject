@@ -22,6 +22,7 @@ class Boom{
             this.boom.classList.add("hidden")
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".ipod").classList.remove("hidden")
+            document.querySelector(".boombottom").classList.add("hidden")
         }
         else if(e.target === this.back){
             this.boom.classList.add("hidden");

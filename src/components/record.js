@@ -38,6 +38,12 @@ class Record{
 
     playAudio(){
         this.audio.play();
+        document.querySelector(".rechead").classList.remove("kindahidden")
+        document.querySelector(".rectext").classList.remove("kindahidden")
+        document.querySelector(".subrec").classList.remove("kindahidden")
+        document.querySelector(".subrec").classList.add("fastfade")
+        document.querySelector(".rechead").classList.add("fastfade")
+        document.querySelector(".rectext").classList.add("fade")
         document.querySelector(".rec").classList.add("spin");
         this.isPlaying = true;
         this.playrec.innerText = "▐▐";

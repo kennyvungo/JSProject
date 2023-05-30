@@ -9,12 +9,20 @@ class Home{
 
     handleClick(){
         this.home.classList.add("fadeout", "hidden");
-        this.phono.classList.add("fastfade");
-        this.phono.classList.remove("hidden");
-        document.querySelector(".bottom").classList.remove("hidden")
+        document.querySelector(".foreword").classList.remove("hidden")
+        document.querySelector(".foreword").classList.add("fastfade")
+        setTimeout(this.delay,7000);
     }
 
+    delay(){
+        document.querySelector(".foreword").classList.add("hidden")
+        document.querySelector(".phono").classList.add("fastfade");
+        document.querySelector(".phono").classList.remove("hidden");
+        document.querySelector(".bottom").classList.remove("hidden")
+    }
 }
+
+
 
 
 

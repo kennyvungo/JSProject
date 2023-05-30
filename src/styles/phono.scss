@@ -23,7 +23,7 @@
     height: 425px;
     display: flex;
     position: fixed;
-    bottom: 10%;
+    bottom: 20%;
 
 }
 h2{
@@ -151,12 +151,14 @@ h2{
 }
 
 .pholeft{
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     position: fixed;
-    left: 5%;
+    top: 40%;
+    left: 3%;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .phoright{
@@ -164,6 +166,11 @@ h2{
     display: flex;
     position: fixed;
     right: 10%;
+    top: 40%;
     flex-direction: column;
     justify-content: center;
+}
+
+p{
+    padding: 8px;
 }

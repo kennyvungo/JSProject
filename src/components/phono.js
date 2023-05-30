@@ -37,6 +37,8 @@ class Phono{
             document.querySelector(".pholeft").classList.add("fade")
             document.querySelector(".heading").classList.add("fastfade")
             document.querySelector(".heading").classList.remove("kindahidden")
+            document.querySelector(".subheading").classList.add("fastfade")
+            document.querySelector(".subheading").classList.remove("kindahidden")
             document.querySelector(".phoright").classList.add("fade")
             document.querySelector(".phoright").classList.remove("kindahidden")
 
