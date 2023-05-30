@@ -1,4 +1,6 @@
+let index = 0;
 class Ipod{
+   
     constructor(){
         this.ipo = document.querySelector(".ipod");
         this.play = document.querySelector(".playipod");
@@ -14,6 +16,7 @@ class Ipod{
         this.inner.addEventListener("click",this.handleClick);
         this.back = document.querySelector(".back");
         this.back.addEventListener("click",this.handleClick);
+        this.int = setInterval(this.slideAlb,2000);
     }
 
     handleClick(e){
@@ -26,6 +29,7 @@ class Ipod{
                 setTimeout(this.loadMenu,2000);
                 break;
             case this.inner:
+                clearInterval(this.int);
                 document.querySelector(".menupage").classList.add("hidden");
                 document.querySelector(".curplay").classList.remove("hidden");
                 break;
@@ -66,6 +70,15 @@ class Ipod{
         document.querySelector(".apple").classList.add("hidden");
         document.querySelector(".iscreen").classList.add("hidden");
         document.querySelector(".menupage").classList.remove("hidden");
+    }
+
+
+    slideAlb(){
+        console.log(index);
+        document.querySelector(`.album${CSS.escape(index)}`).classList.add("hidden");
+        index ++;
+        if(index > 4) index = 0;
+        document.querySelector(`.album${CSS.escape(index)}`).classList.remove("hidden");
     }
 
 }
