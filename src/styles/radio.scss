@@ -143,9 +143,6 @@
     color: darkgray;
 }
 
-
-
-
 .radio{
     display: flex;
     flex-direction: column;
@@ -180,7 +177,7 @@
     to {
         margin-left: -200%;
     }
-
+}
 .radslideright{
     animation: radslideright 2s forwards;
 }
