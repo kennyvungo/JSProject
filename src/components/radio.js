@@ -26,12 +26,12 @@ class Radio{
             document.querySelector(".recbottom").classList.remove("hidden")
         }
         else if(e.target === this.back){
-            this.rad.classList.add("hidden");
-            document.querySelector(".phono").classList.remove("hidden");
-            document.querySelector(".phono").classList.remove("fadeout");
+            this.rad.classList.remove("radslidein");
+            this.rad.classList.add("radslideright");
             document.querySelector(".radbottom").classList.add("hidden")
             document.querySelector(".bottom").classList.remove("hidden")
             if(this.isPlaying) this.stopAudio();
+            setTimeout(this.backhide,1000);
         }
     }
     hide(){
@@ -39,6 +39,13 @@ class Radio{
         document.querySelector(".radio").classList.remove("radslideleft");
         document.querySelector(".record").classList.add("radslidein");
         document.querySelector(".record").classList.remove("hidden");
+    }
+
+    backhide(){
+        document.querySelector(".radio").classList.add("hidden");
+        document.querySelector(".radio").classList.remove("radslideright");
+        document.querySelector(".phono").classList.add("leftright");
+        document.querySelector(".phono").classList.remove("hidden");
     }
     
     playAudio(){

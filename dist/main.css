@@ -915,6 +915,30 @@ p {
     margin-left: -200%;
   }
 }
+.radslideright {
+  animation: radslideright 2s forwards;
+}
+
+@keyframes radslideright {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -200%;
+  }
+}
+.leftright {
+  animation: leftright 2s forwards;
+}
+
+@keyframes leftright {
+  from {
+    margin-left: -200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
 .playwalk {
   font-size: 50px;
   cursor: pointer;

@@ -22,6 +22,7 @@ class Phono{
             // this.phono.classList.add("hidden");
             setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
+            document.querySelector(".phono").classList.remove("leftright")
             document.querySelector(".bottom").classList.add("hidden")
             document.querySelector(".radbottom").classList.remove("hidden")
         }
