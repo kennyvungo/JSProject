@@ -1009,6 +1009,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   top: 10%;
 }
 
@@ -1119,6 +1120,66 @@ p {
   width: 320px;
   height: 700px;
   border-radius: 30px;
+}
+
+.player1 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/player.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player2 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/player.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player3 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/player.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.spothead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.subspot {
+  font-size: 40px;
+  font-family: "Poiret One", cursive;
+}
+
+.bottomspot {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.leftspot {
+  position: fixed;
+  left: 5%;
+  font-size: 30px;
+  font-family: "Poiret One", cursive;
+}
+
+.rightspot {
+  justify-content: center;
 }
 
 .playboom {

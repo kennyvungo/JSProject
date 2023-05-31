@@ -1,3 +1,13 @@
+const aud1 = new Audio('src/assets/midnightcity.mp3');
+const aud2 = new Audio('src/assets/stronger.mp3');
+const aud3 = new Audio('src/assets/blue.mp3');
+const aud4 = new Audio('src/assets/abba.mp3');
+const aud5 = new Audio('src/assets/lavieenrose.mp3');
+const aud6 = new Audio('src/assets/cross.mp3');
+const aud7 = new Audio('src/assets/chopin.mp3');
+let lib = [aud1,aud2,aud3,aud4,aud5,aud6,aud7];
+let idx = 0;
+
 class Spot{
     constructor(){
         this.handleClick = this.handleClick.bind(this);
@@ -6,6 +16,15 @@ class Spot{
         this.player = document.querySelector(".player");
         this.player.addEventListener("click",this.handleClick)
         this.audio = new Audio('src/assets/midnightcity.mp3')
+        document.addEventListener("keydown", (e) =>{
+            e = e || window.event;
+            if(e.key=== "ArrowLeft"){
+                this.prevSong();
+            }
+            else if(e.key === "ArrowRight"){
+                this.nextSong();
+            }
+        })
     }
 
     handleClick(e){
@@ -17,6 +36,14 @@ class Spot{
         }
         else if(e.target === this.player){
             this.audio.play();
+            document.querySelector(".spothead").classList.remove("kindahidden")
+            document.querySelector(".spothead").classList.add("fastfade")
+            document.querySelector(".subspot").classList.remove("kindahidden")
+            document.querySelector(".subspot").classList.add("fastfade")
+            document.querySelector(".leftspot").classList.remove("kindahidden")
+            document.querySelector(".leftspot").classList.add("fade")
+            document.querySelector(".rightspot").classList.remove("kindahidden")
+            document.querySelector(".rightspot").classList.add("fade")
         }
     }
 
@@ -25,6 +52,15 @@ class Spot{
         document.querySelector(".player").classList.remove("hidden");
 
     }
+
+
+    nextSong(){
+        console.log("next song")
+    }
+    prevSong(){
+        console.log("prev song")
+    }
+
 
 }
 

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     top: 10%;
 }
 
@@ -17,6 +18,7 @@
 }
 
 .screen {
+
     z-index: 10;
     position: absolute;
     background: url('https://i.pinimg.com/564x/ee/e9/b1/eee9b1c75a2d43f5a0d32a212d1a565f.jpg');
@@ -117,4 +119,65 @@
     height: 700px;
     border-radius: 30px;
     
+}
+.player1 {
+    position: absolute;
+    font-family: 'SpotifyFont', sans-serif;
+    cursor: pointer;
+    background: url('../src/assets/player.PNG');
+    background-size: cover;
+    width: 320px;
+    height: 700px;
+    border-radius: 30px;
+
+}
+.player2 {
+    position: absolute;
+    font-family: 'SpotifyFont', sans-serif;
+    cursor: pointer;
+    background: url('../src/assets/player.PNG');
+    background-size: cover;
+    width: 320px;
+    height: 700px;
+    border-radius: 30px;
+
+}
+.player3 {
+    position: absolute;
+    font-family: 'SpotifyFont', sans-serif;
+    cursor: pointer;
+    background: url('../src/assets/player.PNG');
+    background-size: cover;
+    width: 320px;
+    height: 700px;
+    border-radius: 30px;
+
+}
+
+
+
+
+
+.spothead{
+    margin-top: 10px;
+    font-size: 80px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.subspot{
+    font-size: 40px;
+    font-family: 'Poiret One', cursive;
+}
+.bottomspot{
+    display: flex;
+    justify-content: space-evenly;
+}
+.leftspot{
+    position: fixed ;
+    left: 5%;
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+}
+.rightspot{
+    justify-content: center;
 }

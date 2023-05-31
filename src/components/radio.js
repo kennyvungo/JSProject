@@ -8,7 +8,7 @@ class Radio{
         this.playrad.addEventListener("click",this.handleClick)
         this.next.addEventListener("click",this.handleClick)
         this.back.addEventListener("click",this.handleClick)
-        this.audio = new Audio('src/assets/country.mp3');
+        this.audio = new Audio('src/assets/cross.mp3');
         this.isPlaying = false;
     }
 
