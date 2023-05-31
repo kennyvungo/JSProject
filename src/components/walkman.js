@@ -26,12 +26,13 @@ constructor(){
             document.querySelector(".boombottom").classList.remove("hidden")
         }
         else if(e.target === this.back){
-            this.walk.classList.add("hidden");
-            document.querySelector(".record").classList.remove("hidden");
-            document.querySelector(".record").classList.remove("fadeout");
+            this.walk.classList.remove("leftright");
+            this.walk.classList.remove("radslidein");
+            this.walk.classList.add("radslideright");
             document.querySelector(".walkbottom").classList.add("hidden")
             document.querySelector(".recbottom").classList.remove("hidden")
             if(this.isPlaying) this.stopAudio();
+            setTimeout(this.backhide,1000);
         }
     }
 
@@ -41,6 +42,12 @@ constructor(){
         this.boom = document.querySelector(".boom");
         this.boom.classList.add("radslidein");
         this.boom.classList.remove("hidden");
+    }
+    backhide(){
+        document.querySelector(".walkman").classList.add("hidden");
+        document.querySelector(".walkman").classList.remove("radslideright");
+        document.querySelector(".record").classList.add("leftright");
+        document.querySelector(".record").classList.remove("hidden");
     }
     playAudio(){
             this.audio.play();

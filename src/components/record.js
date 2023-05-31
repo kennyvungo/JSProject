@@ -18,7 +18,8 @@ class Record{
         }
         else if (e.target === this.next){
             this.rec.classList.remove("fastfade");
-            this.rec.classList.remove("radslidein")
+            this.rec.classList.remove("radslidein");
+            this.rec.classList.remove("leftright");
             this.rec.classList.add("slideleft");
             setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
@@ -26,12 +27,13 @@ class Record{
             document.querySelector(".walkbottom").classList.remove("hidden")
         }
         else if (e.target === this.back){
-            this.rec.classList.add("hidden");
-            document.querySelector(".radio").classList.remove("hidden")
-            document.querySelector(".radio").classList.remove("fadeout")
+            this.rec.classList.remove("radslidein");
+            this.rec.classList.add("radslideright");
+            this.rec.classList.remove("leftright");
             document.querySelector(".recbottom").classList.add("hidden")
             document.querySelector(".radbottom").classList.remove("hidden")
             if(this.isPlaying) this.stopAudio();
+            setTimeout(this.backhide,1000);
         }
     }
 
@@ -42,6 +44,13 @@ class Record{
         this.walk = document.querySelector(".walkman")
         this.walk.classList.add("radslidein")
         this.walk.classList.remove("hidden")
+    }
+
+    backhide(){
+        document.querySelector(".record").classList.add("hidden");
+        document.querySelector(".record").classList.remove("radslideright");
+        document.querySelector(".radio").classList.add("leftright");
+        document.querySelector(".radio").classList.remove("hidden");
     }
     playAudio(){
         this.audio.play();

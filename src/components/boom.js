@@ -18,19 +18,22 @@ class Boom{
             this.isPlaying ? this.stopAudio() : this.playAudio();
         }
         else if (e.target === this.next){
+            this.boom.classList.remove("leftright");
             this.boom.classList.remove("radslidein");
             this.boom.classList.add("radslideleft");
+            document.querySelector(".boombottom").classList.remove("fastfade")
+            document.querySelector(".boombottom").classList.add("fadeout")
             setTimeout(this.hide,1000);
             if(this.isPlaying) this.stopAudio();
-            document.querySelector(".boombottom").classList.add("hidden")
         }
         else if(e.target === this.back){
-            this.boom.classList.add("hidden");
-            document.querySelector(".walkman").classList.remove("hidden")
-            document.querySelector(".walkman").classList.remove("fadeout")
+            this.boom.classList.remove("leftright");
+            this.boom.classList.remove("radslidein");
+            this.boom.classList.add("radslideright");
             document.querySelector(".boombottom").classList.add("hidden")
             document.querySelector(".walkbottom").classList.remove("hidden")
             if(this.isPlaying) this.stopAudio();
+            setTimeout(this.backhide,1000);
 
         }
     }
@@ -40,7 +43,16 @@ class Boom{
         document.querySelector(".boom").classList.remove("radslideleft");
         document.querySelector(".ipod").classList.add("radslidein");
         document.querySelector(".ipod").classList.remove("hidden");
+        document.querySelector(".boombottom").classList.add("hidden")
+        document.querySelector(".boombottom").classList.remove("fade")
 
+    }
+
+    backhide(){
+        document.querySelector(".boom").classList.add("hidden");
+        document.querySelector(".boom").classList.remove("radslideright");
+        document.querySelector(".walkman").classList.add("leftright");
+        document.querySelector(".walkman").classList.remove("hidden");
     }
     playAudio(playing){
         if (!playing){

@@ -22,10 +22,12 @@ class Radio{
             this.rad.classList.add("radslideleft");
             setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
+            document.querySelector(".radio").classList.remove("leftright")
             document.querySelector(".radbottom").classList.add("hidden")
             document.querySelector(".recbottom").classList.remove("hidden")
         }
         else if(e.target === this.back){
+            document.querySelector(".radio").classList.remove("leftright")
             this.rad.classList.remove("radslidein");
             this.rad.classList.add("radslideright");
             document.querySelector(".radbottom").classList.add("hidden")
