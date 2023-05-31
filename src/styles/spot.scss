@@ -1,10 +1,16 @@
+.spotplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+}
+
 .iphone {
     margin: auto;
     border: 10px solid black;
     border-radius: 40px;
     width: 320px;
     height: 700px;
-    position: fixed;
     left: 39%;
     top: 5%;
     box-shadow: 0px 20px 15px #33333335;
@@ -15,8 +21,8 @@
     position: absolute;
     background: url('https://i.pinimg.com/564x/ee/e9/b1/eee9b1c75a2d43f5a0d32a212d1a565f.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 320px;
+    height: 700px;
     border-radius: 30px;
 }
 
@@ -51,7 +57,7 @@
     z-index: 50;
     top: 0;
     left: 62px;
-    position: absolute;
+    position: relative;
     background: #000000;
     width: 200px;
     height: 30px;
@@ -82,30 +88,21 @@
     position: absolute;
     background: #0e0e0e;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 320px;
+    height: 700px;
     border-radius: 30px;
 }
 
 .logo{ 
-    display: flex;
+    z-index: 100;
+    position: absolute;
     margin-left: 100px;
     margin-top: 200px;
-    width: 40%;
-    
+    width: 100px;
+    height: 100px;
 
 }
 
-
-.login{
-    z-index: 10;
-    position: absolute;
-    background: pink;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
 
 
 
@@ -116,7 +113,8 @@
     cursor: pointer;
     background: url('../src/assets/player.PNG');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 320px;
+    height: 700px;
+    border-radius: 30px;
     
 }

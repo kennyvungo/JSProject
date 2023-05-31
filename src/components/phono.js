@@ -17,10 +17,10 @@ class Phono{
             this.isPlaying ? this.stopAudio() : this.playAudio();
             document.querySelector(".notes").classList.remove("kindahidden")
         }
-        else{
-            this.phono.classList.add("slideleft");
+        else{this.phono.classList.remove("fastfade");
+            this.phono.classList.add("radslideleft");
             // this.phono.classList.add("hidden");
-            setTimeout(this.hide,700)
+            setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".bottom").classList.add("hidden")
             document.querySelector(".radbottom").classList.remove("hidden")
@@ -28,7 +28,7 @@ class Phono{
     }
     hide(){
         document.querySelector(".phono").classList.add("hidden");
-        document.querySelector(".phono").classList.remove("slideleft");
+        document.querySelector(".phono").classList.remove("radslideleft");
         document.querySelector(".radio").classList.add("radslidein");
         document.querySelector(".radio").classList.remove("hidden");
     }
