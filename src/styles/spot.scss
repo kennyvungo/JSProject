@@ -107,7 +107,17 @@
 }
 
 
+.playlist {
+    position: absolute;
+    font-family: 'SpotifyFont', sans-serif;
+    cursor: pointer;
+    background: url('../src/assets/playlist.PNG');
+    background-size: cover;
+    width: 320px;
+    height: 700px;
+    border-radius: 30px;
 
+}
 
 
 .player0{
@@ -203,10 +213,21 @@
     font-size: 40px;
     font-family: 'Poiret One', cursive;
 }
-.bottomspot{
+.spotbottom{
     display: flex;
     justify-content: space-evenly;
 }
+.backspot{
+    font-size: 30px;
+    cursor: pointer;
+}
+.spotnext{
+font-size: 50px;
+cursor: pointer;
+
+}
+
+
 .leftspot{
     position: fixed ;
     left: 5%;
@@ -214,5 +235,12 @@
     font-family: 'Poiret One', cursive;
 }
 .rightspot{
-    justify-content: center;
+    display: block;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+    position: fixed;
+    right: 2%;
+}
+.spotnext{
+    
 }
