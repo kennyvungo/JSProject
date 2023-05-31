@@ -1111,7 +1111,7 @@ p {
   height: 100px;
 }
 
-.player {
+.player0 {
   position: absolute;
   font-family: "SpotifyFont", sans-serif;
   cursor: pointer;
@@ -1126,7 +1126,7 @@ p {
   position: absolute;
   font-family: "SpotifyFont", sans-serif;
   cursor: pointer;
-  background: url("../src/assets/player.PNG");
+  background: url("../src/assets/song2.PNG");
   background-size: cover;
   width: 320px;
   height: 700px;
@@ -1137,7 +1137,7 @@ p {
   position: absolute;
   font-family: "SpotifyFont", sans-serif;
   cursor: pointer;
-  background: url("../src/assets/player.PNG");
+  background: url("../src/assets/song3.PNG");
   background-size: cover;
   width: 320px;
   height: 700px;
@@ -1148,7 +1148,40 @@ p {
   position: absolute;
   font-family: "SpotifyFont", sans-serif;
   cursor: pointer;
-  background: url("../src/assets/player.PNG");
+  background: url("../src/assets/song4.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player4 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song5.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player5 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song6.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player6 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song7.PNG");
   background-size: cover;
   width: 320px;
   height: 700px;

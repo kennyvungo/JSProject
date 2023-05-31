@@ -13,7 +13,7 @@ class Spot{
         this.handleClick = this.handleClick.bind(this);
         this.app = document.querySelector(".spotapp");
         this.app.addEventListener("click",this.handleClick)
-        this.player = document.querySelector(".player");
+        this.player = document.querySelector(".player0");
         this.player.addEventListener("click",this.handleClick)
         this.audio = new Audio('src/assets/midnightcity.mp3')
         document.addEventListener("keydown", (e) =>{
@@ -35,7 +35,7 @@ class Spot{
             setTimeout(this.renderLog,2000);
         }
         else if(e.target === this.player){
-            this.audio.play();
+            lib[idx].play();
             document.querySelector(".spothead").classList.remove("kindahidden")
             document.querySelector(".spothead").classList.add("fastfade")
             document.querySelector(".subspot").classList.remove("kindahidden")
@@ -49,16 +49,26 @@ class Spot{
 
     renderLog(){
         document.querySelector(".loading").classList.add("hidden");
-        document.querySelector(".player").classList.remove("hidden");
+        document.querySelector(".player0").classList.remove("hidden");
 
     }
 
 
     nextSong(){
-        console.log("next song")
+        lib[idx].pause();
+        document.querySelector(`.player${idx}`).classList.add("hidden");
+        idx ++;
+        if(idx > 6) idx = 0;
+        document.querySelector(`.player${idx}`).classList.remove("hidden");
+        lib[idx].play();
     }
     prevSong(){
-        console.log("prev song")
+        lib[idx].pause();
+        document.querySelector(`.player${idx}`).classList.add("hidden");
+        idx --;
+        if(idx<0) idx = 6;
+        document.querySelector(`.player${idx}`).classList.remove("hidden");
+        lib[idx].play();
     }
 
 
