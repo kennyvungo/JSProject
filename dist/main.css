@@ -319,27 +319,21 @@ h2 {
   }
 }
 .bottompho {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   font-family: "Poiret One", cursive;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pholeft {
   font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-bottom: 15px;
+  padding-left: 50px;
 }
 
 .phoright {
   font-size: 30px;
-  display: flex;
-  right: 10%;
-  top: 40%;
-  flex-direction: column;
-  justify-content: center;
+  padding-right: 200px;
   padding-bottom: 10px;
 }
 
