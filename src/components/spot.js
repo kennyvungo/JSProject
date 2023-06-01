@@ -34,6 +34,9 @@ class Spot{
                 this.nextSong();
             }
         })
+        this.back = document.querySelector(".backspot");
+        this.back.addEventListener("click",this.handleClick)
+        this.spot = document.querySelector(".spotplay")
     }
 
     handleClick(e){
@@ -61,6 +64,7 @@ class Spot{
             if(isPlaying) lib[idx].pause();
             document.querySelector(".spotplay").classList.add("fadeout")
             document.querySelector(".rightspot").classList.add("fadeout")
+            document.querySelector(".spotbottom").classList.add("fadeout")
             setTimeout(this.hide,1000)
             document.querySelector(".timeline").classList.remove("hidden");
             setTimeout(this.reveal1,1500)
@@ -72,7 +76,24 @@ class Spot{
             setTimeout(this.reveal7,4500)
             setTimeout(this.cleanUp,7000)
         }
+        else if(e.target === this.back){
+            document.querySelector(".spotplay").classList.remove("leftright")
+            this.spot.classList.remove("radslidein");
+            this.spot.classList.add("radslideright");
+            document.querySelector(".spotbottom").classList.add("fadeout")
+            if(isPlaying) this.stopAudio();
+            setTimeout(this.backhide,1000);
+        }
     }
+    backhide(){
+        document.querySelector(".spotplay").classList.add("hidden");
+        document.querySelector(".spotplay").classList.remove("radslideright");
+        document.querySelector(".ipod").classList.add("leftright");
+        document.querySelector(".ipod").classList.remove("hidden");
+        document.querySelector(".spotbottom").classList.remove("fadeout")
+        document.querySelector(".spotbottom").classList.add("hidden")
+    }
+
     reveal1(){
         document.querySelector(".phonoend").classList.remove("kindahidden")
         document.querySelector(".phonoend").classList.add("fastfade")
@@ -115,7 +136,9 @@ class Spot{
     hide(){
         document.querySelector(".spotplay").classList.add("hidden")
         document.querySelector(".spotplay").classList.remove("fadeout")
-            document.querySelector(".rightspot").classList.remove("fadeout")
+        document.querySelector(".rightspot").classList.remove("fadeout")
+        document.querySelector(".spotbottom").classList.add("hidden")
+        document.querySelector(".spotbottom").classList.remove("fadeout")
     }
     playPause(){
             if(isPlaying) {

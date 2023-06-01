@@ -215,16 +215,29 @@
 }
 .spotbottom{
     display: flex;
+    position: fixed;
+    bottom: 0;
     justify-content: space-evenly;
+    width: 100%;
+
+
 }
 .backspot{
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
 }
-.spotnext{
-font-size: 50px;
-cursor: pointer;
+.backspot:hover {
+    font-size: 53px;
+    color: darkgray;
+}
 
+.spotnext{
+font-size: 40px;
+cursor: pointer;
+}
+.spotnext:hover {
+    font-size: 53px;
+    color: darkgray;
 }
 
 

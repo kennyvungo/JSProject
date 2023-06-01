@@ -34,9 +34,12 @@ class Ipod{
                 document.querySelector(".curplay").classList.remove("hidden");
                 break;
             case this.next:
+                this.ipo.classList.remove("leftright");
                 this.ipo.classList.remove("radslidein");
                 this.ipo.classList.add("radslideleft");
-                setTimeout(this.hide,1000);
+                document.querySelector(".spotbottom").classList.remove("hidden")
+                document.querySelector(".spotbottom").classList.add("fastfade")
+                setTimeout(this.hide,2000);
                 if(this.isPlaying) this.stopAudio();
                 break;
             case this.back:
@@ -57,6 +60,7 @@ class Ipod{
         document.querySelector(".ipod").classList.remove("radslideleft");
         document.querySelector(".spotplay").classList.add("radslidein");
         document.querySelector(".spotplay").classList.remove("hidden");
+        document.querySelector(".spotbottom").classList.remove("fastfade")
     }
     backhide(){
         document.querySelector(".ipod").classList.add("hidden");
