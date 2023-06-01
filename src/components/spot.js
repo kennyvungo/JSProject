@@ -62,9 +62,56 @@ class Spot{
             document.querySelector(".spotplay").classList.add("fadeout")
             document.querySelector(".rightspot").classList.add("fadeout")
             setTimeout(this.hide,1000)
-            
+            document.querySelector(".timeline").classList.remove("hidden");
+            setTimeout(this.reveal1,1500)
+            setTimeout(this.reveal2,2000)
+            setTimeout(this.reveal3,2500)
+            setTimeout(this.reveal4,3000)
+            setTimeout(this.reveal5,3500)
+            setTimeout(this.reveal6,4000)
+            setTimeout(this.reveal7,4500)
+            setTimeout(this.cleanUp,7000)
         }
     }
+    reveal1(){
+        document.querySelector(".phonoend").classList.remove("kindahidden")
+        document.querySelector(".phonoend").classList.add("fastfade")
+    }
+    reveal2(){
+        document.querySelector(".radend").classList.remove("kindahidden")
+        document.querySelector(".radend").classList.add("fastfade")
+    }
+    reveal3(){
+        document.querySelector(".recend").classList.remove("kindahidden")
+        document.querySelector(".recend").classList.add("fastfade")
+    }
+    reveal4(){
+        document.querySelector(".walkend").classList.remove("kindahidden")
+        document.querySelector(".walkend").classList.add("fastfade")
+    }
+    reveal5(){
+        document.querySelector(".boomend").classList.remove("kindahidden")
+        document.querySelector(".boomend").classList.add("fastfade")
+    }
+    reveal6(){
+        document.querySelector(".ipodend").classList.remove("kindahidden")
+        document.querySelector(".ipodend").classList.add("fastfade")
+    }
+    reveal7(){
+        document.querySelector(".spotend").classList.remove("kindahidden")
+        document.querySelector(".spotend").classList.add("fastfade")
+    }
+    cleanUp(){
+        document.querySelector(".phonoend").classList.remove("fastfade")
+        document.querySelector(".recend").classList.remove("fastfade")
+        document.querySelector(".walkend").classList.remove("fastfade")
+        document.querySelector(".boomend").classList.remove("fastfade")
+        document.querySelector(".ipodend").classList.remove("fastfade")
+        document.querySelector(".radend").classList.remove("fastfade")
+        document.querySelector(".spotend").classList.remove("fastfade")
+    }
+
+
     hide(){
         document.querySelector(".spotplay").classList.add("hidden")
         document.querySelector(".rightspot").classList.add("hidden")

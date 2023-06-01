@@ -1,3 +1,6 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
+  \****************************************************************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,6 +136,1352 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.home{color:#000;display:flex;flex-direction:column;place-items:center}.sub{margin-top:7vh;font-size:40px}.typewriter{overflow:hidden;border-right:.07em solid #000;white-space:nowrap;margin:0 auto;animation:typing 3.1s steps(40, end),blink-caret .75s step-end infinite}@keyframes typing{from{width:0}to{width:54%}}@keyframes blink-caret{from,to{border-color:rgba(0,0,0,0)}50%{border-color:#000}}.timeline{display:flex;position:fixed;top:30%;flex-direction:row;justify-content:space-between;align-items:center}.time{padding-right:5px;width:200px;cursor:pointer}.recend:hover{animation:spin 1s infinite linear}.radend:hover{transform:translateY(-15px)}.walkend:hover{transform:translateY(-10px)}.phonoend:hover{transform:translateY(-15px)}.boomend:hover{animation:shake 2s ease infinite}.ipodend:hover{transform:translateY(-10px)}.spotend:hover{transform:translateY(-15px)}.phono{display:flex;flex-direction:column;align-items:center;width:100%;height:100%}.heading{margin-top:10px;font-family:"Cormorant Garamond",serif;font-size:80px}.right{display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end}.pho{height:425px;display:flex;position:fixed;bottom:20%}h2{font-size:75px}.backpho{font-size:50px;cursor:pointer}.playpho{font-size:50px;cursor:pointer}.playpho:hover{font-size:53px;color:#a9a9a9}.phonext{font-size:50px;cursor:pointer}.phonext:hover{font-size:53px;color:#a9a9a9}.slider{width:200px;height:100px;overflow:hidden}.slide-image{width:50%;height:auto;animation:slide 1s alternate}@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(0%)}}.notes{display:flex;margin:auto;position:relative;width:50%;min-width:300px;height:200px;border:0px solid #000}.noot-1,.noot-2,.noot-3,.noot-4{position:absolute;animation:notes 2s infinite linear;font-size:35px;opacity:0;color:#000}.noot-1{top:60px;left:0;animation-delay:.5s}.noot-2{top:30px;left:30%;animation-delay:1s}.noot-3{top:90px;left:60%;animation-delay:1.5s}.noot-4{top:40px;left:90%;animation-delay:2s}@keyframes notes{0%{transform:scale(1) translate(0, 0);opacity:0}50%{opacity:1;transform:scale(1.5) translate(50%, -50%)}80%{opacity:0;transform:scale(1.5) translate(100%, -100%)}100%{transform:scale(1.5) translate(100%, -100%);opacity:0}}.bottompho{font-family:"Poiret One",cursive;width:100%;display:flex;justify-content:space-between}.pholeft{font-size:30px;padding-bottom:15px;padding-left:50px}.phoright{font-size:30px;padding-right:200px;padding-bottom:10px}p{padding:8px}.subheading{font-family:"Poiret One",cursive;font-size:40px}.slideleft{animation:slidelef 2s forwards}@keyframes slidelef{from{margin-left:0%}to{margin-left:-200%}}.radslidein{animation:radslidein 2s forwards}@keyframes radslidein{from{margin-right:-100%}to{margin-right:0%}}.playrec{font-size:50px;cursor:pointer}.recnext{font-size:50px;cursor:pointer}@keyframes bounce-in{0%{opacity:0;transform:scale(0.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(0.9)}100%{transform:scale(1)}}.spin{animation:spin 1s infinite linear}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.recbottom{display:flex;position:fixed;bottom:0;justify-content:space-evenly;width:100%}.backrec{font-size:50px;cursor:pointer}.record{display:flex;flex-direction:column;justify-content:center;align-items:center}.rechead{font-family:"Cormorant Garamond",serif;margin-top:10px;font-size:80px}.rec{height:350px;width:350px;position:fixed;bottom:14%}.backrec:hover{font-size:53px;color:#a9a9a9}.playrec:hover{font-size:53px;color:#a9a9a9}.recnext:hover{font-size:53px;color:#a9a9a9}.subrec{font-family:"Poiret One",cursive;font-size:40px}.rectext{display:flex;font-size:30px;flex-direction:column;justify-content:center;align-items:center;font-family:"Poiret One",cursive}.playipod{cursor:pointer}.ipodnext{cursor:pointer}.centered{top:50%;left:50%;transform:translate(-50%, -50%)}.ipod{display:flex;flex-direction:column;justify-content:center;align-items:center}.cont{background-color:#efeeea;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:50vh}.rect{width:300px;height:400px;background:#fff;background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 161, 161) 73%);border-radius:40px;border:2px solid #a4a1a1;box-shadow:2px 2px 3px 4px #d3d3d3;display:flex;flex-direction:column;justify-content:space-between;align-items:center}.iscreen{z-index:10;background-color:#363434;width:85%;height:44%;margin-top:15px;border-radius:10px;border:7px solid #000;display:flex;justify-content:center;align-items:center}.menupage{background-color:#fff;width:85%;height:44%;margin-top:15px;border-radius:10px;border:7px solid #000;display:flex;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-weight:100;font-size:15px}.therest{display:flex;flex-direction:column;justify-content:space-evenly}.curplay{background-color:#fff;width:85%;height:44%;margin-top:15px;border-radius:10px;border:7px solid #000;display:flex;flex-direction:column;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-weight:100;font-size:19px}.menus{z-index:20;display:flex;width:100%;flex-direction:column;justify-content:flex-start}.album0{height:100%;width:50%;z-index:5}.album1{height:100%;width:50%;z-index:6}.album2{height:100%;width:50%;z-index:7}.album3{height:100%;width:50%;z-index:8}.album4{height:100%;width:50%;z-index:9}.bar{display:flex;justify-content:space-between;background-color:#d3d3d3;border:1px outset gray}.batt{display:flex;color:#6ac6fb;justify-content:space-between}.terry{width:15px;height:10px;background-color:#82c65e}.wheel{display:flex;height:170px;width:170px;background-color:#d3d3d3;border-radius:50%;margin-bottom:12px;border:1px solid gray;flex-direction:column;justify-content:space-around;align-items:center;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;color:gray}.bar{font-size:12px}.selected{background-color:#add8e6}.inner{z-index:10;height:80px;width:80px;border-radius:50%;background:#fff;background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 161, 161) 73%);border:1px solid gray;cursor:pointer}.menu:hover{color:#fff}.playipod:hover{color:#fff}.centerrow{display:flex;justify-content:space-evenly;align-items:center}.back{margin-right:10px}.back:hover{color:#fff}.forward{margin-left:10px}.forward:hover{color:#fff}.apple{height:50px}.menu{cursor:pointer}.middle{display:flex;justify-content:space-evenly}.playalb{height:120px;width:120px}.songinfo{display:flex;flex-direction:column;justify-content:center}.smaller{font-size:12px}.playerbar{display:flex;justify-content:center;font-size:13px}.endbar{width:120px;background-color:#f5f5f5;border:1px solid #d3d3d3;margin-left:5px;margin-right:5px}.ipodhead{margin-top:10px;font-size:80px;font-family:"Cormorant Garamond",serif}.ipodtext{display:flex;flex-direction:column;align-items:center;margin-top:10px;font-size:25px;font-family:"Poiret One",cursive}.back{cursor:pointer}.subipod{font-family:"Poiret One",cursive;font-size:40px}.rad{height:300px;width:300px;display:flex;position:fixed;bottom:20%}.bounce2{animation:bounce2 2s ease infinite}@keyframes bounce2{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}.shake{animation:shake 2s ease infinite;animation-delay:17.4s}@keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes bounceInDown{0%{opacity:0;transform:translateY(-2000px)}60%{opacity:1;transform:translateY(30px)}80%{transform:translateY(-10px)}100%{transform:translateY(0)}}.changeColor{height:100%;width:100%;background-color:#fff;animation-iteration-count:15;animation-duration:.5s;animation-fill-mode:both;animation-name:changeColor;animation-iteration-count:infinite;animation-delay:33.8s;animation-duration:2s;background-size:cover;background-repeat:repeat-y;margin-bottom:1px}@keyframes changeColor{0%{background-color:#efeeea}50%{background-color:blue}100%{background-color:#efeeea}}.radbottom{display:flex;position:fixed;bottom:0;justify-content:space-evenly;width:100%}.backrad{font-size:50px;cursor:pointer}.radnext{font-size:50px;cursor:pointer}.playrad{font-size:50px;cursor:pointer}.backrad:hover{font-size:53px;color:#a9a9a9}.playrad:hover{font-size:53px;color:#a9a9a9}.radnext:hover{font-size:53px;color:#a9a9a9}.radio{display:flex;flex-direction:column;align-items:center}.radhead{margin-top:10px;font-size:80px;font-family:"Cormorant Garamond",serif}.radtext{font-family:"Poiret One",cursive;display:flex;flex-direction:column;align-items:center;font-size:30px;margin-top:10px}.subrad{font-family:"Poiret One",cursive;font-size:40px}.radslideleft{animation:radslidelef 2s forwards}@keyframes radslidelef{from{margin-left:0%}to{margin-left:-200%}}.radslideright{animation:radslideright 2s forwards}@keyframes radslideright{from{margin-right:0%}to{margin-right:-200%}}.leftright{animation:leftright 2s forwards}@keyframes leftright{from{margin-left:-200%}to{margin-left:0%}}.playwalk{font-size:50px;cursor:pointer}.walknext{font-size:50px;cursor:pointer}.backwalk{font-size:50px;cursor:pointer}.backwalk:hover{font-size:53px;color:#a9a9a9}.playwalk:hover{font-size:53px;color:#a9a9a9}.walknext:hover{font-size:53px;color:#a9a9a9}.walk{height:500px;width:300px;position:fixed;bottom:0%}.walkbottom{display:flex;position:fixed;bottom:0;justify-content:space-evenly;width:100%}.walkman{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center}.walkhead{margin-top:10px;font-size:80px;font-family:"Cormorant Garamond",serif}.walktext{display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:30px;font-family:"Poiret One",cursive}.subwalk{font-family:"Poiret One",cursive;font-size:40px}.spotplay{display:flex;flex-direction:column;justify-content:center;align-items:center;top:10%}.iphone{margin:auto;border:10px solid #000;border-radius:40px;width:320px;height:700px;left:39%;top:5%;box-shadow:0px 20px 15px rgba(51,51,51,.2078431373)}.screen{z-index:10;position:absolute;background:url("https://i.pinimg.com/564x/ee/e9/b1/eee9b1c75a2d43f5a0d32a212d1a565f.jpg");background-size:cover;width:320px;height:700px;border-radius:30px}.icons{margin-top:40px;justify-content:flex-start;display:flex}.icons div{margin:10px;z-index:100;background:#fff;width:50px;height:50px;border-radius:15px;box-shadow:0px 5px 5px rgba(51,51,51,.2509803922);cursor:pointer;transform:transform 400ms ease-in-out}#spotify{background-image:url("../src/assets/spotifylogo.png");background-size:cover}#spotify:hover{transform:scale(0.85)}.notch{z-index:50;top:0;left:62px;position:relative;background:#000;width:200px;height:30px;border-radius:0px 0px 20px 20px}.camera{position:absolute;bottom:8px;right:20px;width:1rem;height:1rem;border-radius:50%;border:.2rem solid #1e1f22;background:rgba(68,123,181,.6509803922)}.speaker{position:absolute;right:3.9rem;width:5.2rem;height:.6rem;background:#333;border-radius:.2rem}.loading{z-index:10;position:absolute;background:#0e0e0e;background-size:cover;width:320px;height:700px;border-radius:30px}.logo{z-index:100;position:absolute;margin-left:100px;margin-top:200px;width:100px;height:100px}.playlist{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/playlist.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player0{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/player.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player1{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song2.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player2{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song3.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player3{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song4.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player4{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song5.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player5{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song6.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.player6{position:absolute;font-family:"SpotifyFont",sans-serif;cursor:pointer;background:url("../src/assets/song7.PNG");background-size:cover;width:320px;height:700px;border-radius:30px}.spothead{margin-top:10px;font-size:80px;font-family:"Cormorant Garamond",serif}.subspot{font-size:40px;font-family:"Poiret One",cursive}.spotbottom{display:flex;justify-content:space-evenly}.backspot{font-size:30px;cursor:pointer}.spotnext{font-size:50px;cursor:pointer}.leftspot{position:fixed;left:5%;font-size:30px;font-family:"Poiret One",cursive}.rightspot{font-size:25px;font-family:"Poiret One",cursive;position:fixed;right:2%}.spotfinal{cursor:pointer}.spotfinal:hover{color:#a9a9a9}.playboom{font-size:50px;cursor:pointer}.backboom{font-size:50px;cursor:pointer}.backboom:hover{font-size:53px;color:#a9a9a9;cursor:pointer}.boomnext{font-size:50px;cursor:pointer}.boomnext:hover{font-size:53px;color:#a9a9a9;cursor:pointer}.playboom:hover{font-size:53px;color:#a9a9a9;cursor:pointer}.boombottom{display:flex;position:fixed;bottom:0;justify-content:space-evenly;width:100%}.boombox{height:600px;position:fixed;bottom:0}.boom{display:flex;flex-direction:column;align-items:center}.boomhead{margin-top:10px;font-size:80px;font-family:"Cormorant Garamond",serif}.boomtext{display:flex;flex-direction:column;align-items:center;padding-top:10px;font-size:30px;font-family:"Poiret One",cursive}.subboom{font-family:"Poiret One",cursive;font-size:40px}@font-face{font-family:"SpotifyFont";src:url("/src/assets/fonts/Gotham.otf") format("opentype")}html{font-family:"Courier New",Courier,monospace}.root{background-color:#efeeea;display:flex;flex-direction:column;justify-content:center;align-items:space-evenly}.black{background-color:#000}.play{padding-top:10px;font-size:55px;cursor:pointer}.play:hover{font-size:60px;color:#a9a9a9}h1{margin-top:30vh;font-size:100px}.fade{opacity:0;animation-name:fade-in;animation-duration:1s;animation-delay:3s;animation-fill-mode:forwards}.fastfade{opacity:0;animation-name:fade-in;animation-duration:1s;animation-delay:1s;animation-fill-mode:forwards}@keyframes fade-in{from{opacity:0}to{opacity:1}}.hidden{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}#hidden{display:none}.fadeout{opacity:0;animation-name:fade-out;animation-duration:1.3s;animation-delay:0s;animation-fill-mode:forwards}@keyframes fade-out{from{opacity:1}to{opacity:0}}.pause{font-size:30px}.pause:hover{font-size:33px;color:#a9a9a9}.bottom{display:flex;position:fixed;bottom:0;justify-content:space-evenly;width:100%}.kindahidden{visibility:hidden}.foreword{font-size:50px;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%)}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+.home {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
 
-/*# sourceMappingURL=main.css.map*/
+.sub {
+  margin-top: 7vh;
+  font-size: 40px;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.07em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.1s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 54%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+.timeline {
+  display: flex;
+  position: fixed;
+  top: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  padding-right: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.recend {
+  padding-left: 17px;
+}
+
+.recend:hover {
+  animation: spin 1s infinite linear;
+}
+
+.radend:hover {
+  transform: translateY(-15px);
+}
+
+.walkend:hover {
+  transform: translateY(-10px);
+}
+
+.phonoend:hover {
+  transform: translateY(-15px);
+}
+
+.boomend:hover {
+  animation: shake 2s ease infinite;
+}
+
+.ipodend:hover {
+  transform: translateY(-10px);
+}
+
+.spotend:hover {
+  transform: translateY(-15px);
+}
+
+.phono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  margin-top: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 80px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pho {
+  height: 425px;
+  display: flex;
+  position: fixed;
+  bottom: 20%;
+}
+
+h2 {
+  font-size: 75px;
+}
+
+.backpho {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playpho {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playpho:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.phonext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.phonext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.slider {
+  width: 200px;
+  /* Adjust the width and height as per your requirements */
+  height: 100px;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 50%;
+  height: auto;
+  animation: slide 1s alternate;
+  /* Adjust the animation duration and iteration count as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+    /* Adjust the distance of slide as needed */
+  }
+}
+.notes {
+  display: flex;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+  color: black;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+.bottompho {
+  font-family: "Poiret One", cursive;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pholeft {
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+}
+
+.phoright {
+  font-size: 30px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+}
+
+p {
+  padding: 8px;
+}
+
+.subheading {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+.slideleft {
+  animation: slidelef 2s forwards;
+}
+
+@keyframes slidelef {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -200%;
+  }
+}
+.radslidein {
+  animation: radslidein 2s forwards;
+}
+
+@keyframes radslidein {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+.playrec {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.recnext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.spin {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.recbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.backrec {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rechead {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 10px;
+  font-size: 80px;
+}
+
+.rec {
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  bottom: 14%;
+}
+
+.backrec:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playrec:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.recnext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.subrec {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+.rectext {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+}
+
+.playipod {
+  cursor: pointer;
+}
+
+.ipodnext {
+  cursor: pointer;
+}
+
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ipod {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  background-color: #efeeea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.rect {
+  width: 300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 161, 161) 73%);
+  border-radius: 40px;
+  border: 2px solid rgb(164, 161, 161);
+  box-shadow: 2px 2px 3px 4px lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iscreen {
+  z-index: 10;
+  background-color: rgb(54, 52, 52);
+  width: 85%;
+  height: 44%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 7px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menupage {
+  background-color: white;
+  width: 85%;
+  height: 44%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 7px solid black;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.therest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.curplay {
+  background-color: white;
+  width: 85%;
+  height: 44%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 7px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 19px;
+}
+
+.menus {
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.album0 {
+  height: 100%;
+  width: 50%;
+  z-index: 5;
+}
+
+.album1 {
+  height: 100%;
+  width: 50%;
+  z-index: 6;
+}
+
+.album2 {
+  height: 100%;
+  width: 50%;
+  z-index: 7;
+}
+
+.album3 {
+  height: 100%;
+  width: 50%;
+  z-index: 8;
+}
+
+.album4 {
+  height: 100%;
+  width: 50%;
+  z-index: 9;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  border: 1px outset gray;
+}
+
+.batt {
+  display: flex;
+  color: #6ac6fb;
+  justify-content: space-between;
+}
+
+.terry {
+  width: 15px;
+  height: 10px;
+  background-color: #82c65e;
+}
+
+.wheel {
+  display: flex;
+  height: 170px;
+  width: 170px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 1px solid gray;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+
+.bar {
+  font-size: 12px;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.inner {
+  z-index: 10;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 161, 161) 73%);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: white;
+}
+
+.playipod:hover {
+  color: white;
+}
+
+.centerrow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.back {
+  margin-right: 10px;
+}
+
+.back:hover {
+  color: white;
+}
+
+.forward {
+  margin-left: 10px;
+}
+
+.forward:hover {
+  color: white;
+}
+
+.apple {
+  height: 50px;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playalb {
+  height: 120px;
+  width: 120px;
+}
+
+.songinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smaller {
+  font-size: 12px;
+}
+
+.playerbar {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.endbar {
+  width: 120px;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.ipodhead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.ipodtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Poiret One", cursive;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.subipod {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+.rad {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  position: fixed;
+  bottom: 20%;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.shake {
+  animation: shake 2s ease infinite;
+  animation-delay: 17.4s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.changeColor {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  animation-iteration-count: 15;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-delay: 33.8s;
+  animation-duration: 2s;
+  background-size: cover;
+  background-repeat: repeat-y;
+  margin-bottom: 1px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #efeeea;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: #efeeea;
+  }
+}
+.radbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.backrad {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.radnext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playrad {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backrad:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playrad:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.radnext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radhead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.radtext {
+  font-family: "Poiret One", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.subrad {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+.radslideleft {
+  animation: radslidelef 2s forwards;
+}
+
+@keyframes radslidelef {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -200%;
+  }
+}
+.radslideright {
+  animation: radslideright 2s forwards;
+}
+
+@keyframes radslideright {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -200%;
+  }
+}
+.leftright {
+  animation: leftright 2s forwards;
+}
+
+@keyframes leftright {
+  from {
+    margin-left: -200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.playwalk {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.walknext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backwalk {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backwalk:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.playwalk:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.walknext:hover {
+  font-size: 53px;
+  color: darkgray;
+}
+
+.walk {
+  height: 500px;
+  width: 300px;
+  position: fixed;
+  bottom: 0%;
+}
+
+.walkbottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.walkman {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.walkhead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.walktext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Poiret One", cursive;
+}
+
+.subwalk {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+.spotplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+}
+
+.iphone {
+  margin: auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 700px;
+  left: 39%;
+  top: 5%;
+  box-shadow: 0px 20px 15px rgba(51, 51, 51, 0.2078431373);
+}
+
+.screen {
+  z-index: 10;
+  position: absolute;
+  background: url("https://i.pinimg.com/564x/ee/e9/b1/eee9b1c75a2d43f5a0d32a212d1a565f.jpg");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.icons {
+  margin-top: 40px;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.icons div {
+  margin: 10px;
+  z-index: 100;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(51, 51, 51, 0.2509803922);
+  cursor: pointer;
+  transform: transform 400ms ease-in-out;
+}
+
+#spotify {
+  background-image: url("../src/assets/spotifylogo.png");
+  background-size: cover;
+}
+
+#spotify:hover {
+  transform: scale(0.85);
+}
+
+.notch {
+  z-index: 50;
+  top: 0;
+  left: 62px;
+  position: relative;
+  background: #000000;
+  width: 200px;
+  height: 30px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.camera {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #1e1f22;
+  background: rgba(68, 123, 181, 0.6509803922);
+}
+
+.speaker {
+  position: absolute;
+  right: 3.9rem;
+  width: 5.2rem;
+  height: 0.6rem;
+  background: #333333;
+  border-radius: 0.2rem;
+}
+
+.loading {
+  z-index: 10;
+  position: absolute;
+  background: #0e0e0e;
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.logo {
+  z-index: 100;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 200px;
+  width: 100px;
+  height: 100px;
+}
+
+.playlist {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/playlist.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player0 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/player.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player1 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song2.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player2 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song3.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player3 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song4.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player4 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song5.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player5 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song6.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.player6 {
+  position: absolute;
+  font-family: "SpotifyFont", sans-serif;
+  cursor: pointer;
+  background: url("../src/assets/song7.PNG");
+  background-size: cover;
+  width: 320px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.spothead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.subspot {
+  font-size: 40px;
+  font-family: "Poiret One", cursive;
+}
+
+.spotbottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.backspot {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.spotnext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.leftspot {
+  position: fixed;
+  left: 5%;
+  font-size: 30px;
+  font-family: "Poiret One", cursive;
+}
+
+.rightspot {
+  font-size: 25px;
+  font-family: "Poiret One", cursive;
+  position: fixed;
+  right: 2%;
+}
+
+.spotfinal {
+  cursor: pointer;
+}
+
+.spotfinal:hover {
+  color: darkgray;
+}
+
+.playboom {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backboom {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.backboom:hover {
+  font-size: 53px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.boomnext {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.boomnext:hover {
+  font-size: 53px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.playboom:hover {
+  font-size: 53px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.boombottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.boombox {
+  height: 600px;
+  position: fixed;
+  bottom: 0;
+}
+
+.boom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boomhead {
+  margin-top: 10px;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.boomtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-family: "Poiret One", cursive;
+}
+
+.subboom {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "SpotifyFont";
+  src: url("/src/assets/fonts/Gotham.otf") format("opentype");
+}
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.root {
+  background-color: #efeeea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.black {
+  background-color: black;
+}
+
+.play {
+  padding-top: 10px;
+  font-size: 55px;
+  cursor: pointer;
+}
+
+.play:hover {
+  font-size: 60px;
+  color: darkgray;
+}
+
+h1 {
+  margin-top: 30vh;
+  font-size: 100px;
+}
+
+.fade {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fastfade {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+#hidden {
+  display: none;
+}
+
+.fadeout {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 1.3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.pause {
+  font-size: 30px;
+}
+
+.pause:hover {
+  font-size: 33px;
+  color: darkgray;
+}
+
+.bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.kindahidden {
+  visibility: hidden;
+}
+
+.foreword {
+  font-size: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
