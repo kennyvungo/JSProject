@@ -134,7 +134,6 @@ class Timeline{
         document.querySelector(".spotplay").classList.add("fastfade")
         document.querySelector(".spotbottom").classList.remove("hidden")
         document.querySelector(".spotbottom").classList.add("fastfade")
-
     }
     hideSpot(){
         document.querySelector(".spotplay").classList.remove("fastfade")
