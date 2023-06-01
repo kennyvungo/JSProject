@@ -177,11 +177,10 @@ table {
 }
 .timeline {
   display: flex;
-  position: fixed;
-  top: 30%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
 }
 
 .time {
@@ -1280,9 +1279,9 @@ p {
 }
 
 .rightspot {
+  position: fixed;
   font-size: 25px;
   font-family: "Poiret One", cursive;
-  position: fixed;
   right: 2%;
 }
 

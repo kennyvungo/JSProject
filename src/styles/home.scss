@@ -45,11 +45,10 @@
 }
 .timeline{
     display: flex;
-    position: fixed;
-    top: 30%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 
 }
 .time{

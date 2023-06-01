@@ -114,7 +114,6 @@ class Spot{
 
     hide(){
         document.querySelector(".spotplay").classList.add("hidden")
-        document.querySelector(".rightspot").classList.add("hidden")
         document.querySelector(".spotplay").classList.remove("fadeout")
             document.querySelector(".rightspot").classList.remove("fadeout")
     }
