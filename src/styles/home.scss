@@ -43,5 +43,41 @@
         border-color: black;
     }
 }
+.timeline{
+    display: flex;
+    position: fixed;
+    top: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.time{
+    padding-right: 5px;
+    width: 200px;
+    cursor: pointer;
+}
 
 
+.recend:hover{
+    animation: spin 1s infinite linear;
+}
+.radend:hover{
+    transform: translateY(-15px);
+}
+.walkend:hover{
+    transform: translateY(-10px);
+}
+.phonoend:hover{
+    transform: translateY(-15px);
+}
+
+.boomend:hover{
+    animation: shake 2s ease infinite;
+}
+.ipodend:hover{
+    transform: translateY(-10px);
+}
+.spotend:hover{
+    transform: translateY(-15px);
+}

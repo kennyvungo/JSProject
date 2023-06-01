@@ -235,12 +235,15 @@ cursor: pointer;
     font-family: 'Poiret One', cursive;
 }
 .rightspot{
-    display: block;
     font-size: 25px;
     font-family: 'Poiret One', cursive;
     position: fixed;
     right: 2%;
 }
-.spotnext{
-    
+
+.spotfinal{
+    cursor: pointer;
+}
+.spotfinal:hover{
+    color:darkgray;
 }

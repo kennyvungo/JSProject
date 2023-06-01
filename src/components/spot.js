@@ -16,6 +16,8 @@ class Spot{
         this.app.addEventListener("click",this.handleClick);
         this.playlist = document.querySelector(".playlist");
         this.playlist.addEventListener("click",this.handleClick);
+        this.next = document.querySelector(".spotfinal");
+        this.next.addEventListener("click",this.handleClick);
         document.querySelector(".player0").addEventListener("click",this.playPause);
         document.querySelector(".player1").addEventListener("click",this.playPause);
         document.querySelector(".player2").addEventListener("click",this.playPause);
@@ -55,6 +57,19 @@ class Spot{
             document.querySelector(".rightspot").classList.remove("kindahidden")
             document.querySelector(".rightspot").classList.add("fade")
         }
+        else if(e.target === this.next){
+            if(isPlaying) lib[idx].pause();
+            document.querySelector(".spotplay").classList.add("fadeout")
+            document.querySelector(".rightspot").classList.add("fadeout")
+            setTimeout(this.hide,1000)
+            
+        }
+    }
+    hide(){
+        document.querySelector(".spotplay").classList.add("hidden")
+        document.querySelector(".rightspot").classList.add("hidden")
+        document.querySelector(".spotplay").classList.remove("fadeout")
+            document.querySelector(".rightspot").classList.remove("fadeout")
     }
     playPause(){
             if(isPlaying) {
