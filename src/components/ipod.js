@@ -1,6 +1,7 @@
 let index = 0;
+let isOn = false;
+let isSelected = false;
 class Ipod{
-   
     constructor(){
         this.ipo = document.querySelector(".ipod");
         this.play = document.querySelector(".playipod");
@@ -21,17 +22,44 @@ class Ipod{
     handleClick(e){
         switch(e.target){
             case this.play:
-                this.isPlaying ?  this.stopAudio() : this.playAudio() ;
+                if(isOn){
+                    if(isSelected){
+                        this.isPlaying ?  this.stopAudio() : this.playAudio() ;
+                    }
+                    else{
+                        alert("Need to select song first")
+                    }
+                }
+                else{
+                    alert("Need to turn on iPod first");
+                }
                 break;
             case this.menu:
-                document.querySelector(".apple").classList.remove("hidden")
-                this.int = setInterval(this.slideAlb,2000);
-                setTimeout(this.loadMenu,2000);
+                if(!isOn){
+                    document.querySelector(".apple").classList.remove("hidden")
+                    isOn = true;
+                    this.int = setInterval(this.slideAlb,2000);
+                    setTimeout(this.loadMenu,2000);
+                }
+                else{
+                    alert("iPod is already on")
+                }
                 break;
             case this.inner:
-                clearInterval(this.int);
-                document.querySelector(".menupage").classList.add("hidden");
-                document.querySelector(".curplay").classList.remove("hidden");
+                if(isOn){
+                    if(!isSelected){
+                        clearInterval(this.int);
+                        document.querySelector(".menupage").classList.add("hidden");
+                        document.querySelector(".curplay").classList.remove("hidden");
+                        isSelected = true;
+                    }
+                    else{
+                        alert("song is already selected")
+                    }
+                }
+                else{
+                    alert("Need to turn on iPod first");
+                }
                 break;
             case this.next:
                 this.ipo.classList.remove("leftright");
@@ -67,6 +95,8 @@ class Ipod{
         document.querySelector(".ipod").classList.remove("radslideright");
         document.querySelector(".boom").classList.add("leftright");
         document.querySelector(".boom").classList.remove("hidden");
+        document.querySelector(".boombottom").classList.remove("fastfade");
+        
     }
     playAudio(){
             this.audio.play();

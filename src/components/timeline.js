@@ -19,6 +19,7 @@ class Timeline{
 
     handleClick(e){
         document.querySelector(".timeline").classList.add("fadeout");
+        document.querySelector(".corner").classList.add("fadeout");
         switch (e.target){
             case document.querySelector(".phonoend"):
                 setTimeout(this.revealPhono.bind(this),1000)
@@ -140,6 +141,8 @@ class Timeline{
     }
     reset(){
         document.querySelector(".timeline").classList.remove("fadeout")
+        document.querySelector(".corner").classList.add("hidden");
+        document.querySelector(".corner").classList.remove("fadeout");
         let all = document.querySelectorAll('.time');
         all.forEach( e =>{
             e.classList.add("kindahidden");

@@ -16,6 +16,8 @@ class Phono{
         if(e.target === this.playphono){
             this.isPlaying ? this.stopAudio() : this.playAudio();
             document.querySelector(".notes").classList.remove("kindahidden")
+            document.querySelector(".foreword").classList.add("hidden")
+            document.querySelector(".foreword").classList.remove("fadeout")
         }
         else{this.phono.classList.remove("fastfade");
             this.phono.classList.add("radslideleft");
@@ -23,6 +25,7 @@ class Phono{
             setTimeout(this.hide,1000)
             if(this.isPlaying) this.stopAudio();
             document.querySelector(".phono").classList.remove("leftright")
+            document.querySelector(".bottom").classList.remove("fastfade")
             document.querySelector(".bottom").classList.add("hidden")
             document.querySelector(".radbottom").classList.remove("hidden")
         }

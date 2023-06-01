@@ -69,3 +69,15 @@ font-size: 50px;
     font-family: 'Poiret One', cursive;
     font-size: 40px;
 }
+
+.bob{
+    animation: bobbing 2s linear infinite;
+}
+@keyframes bobbing{
+    0%,100%{
+        bottom:0;
+    }
+    50%{
+        bottom: 25px;
+    }
+}

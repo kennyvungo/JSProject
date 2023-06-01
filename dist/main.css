@@ -221,6 +221,13 @@ table {
   transform: translateY(-15px);
 }
 
+.corner {
+  font-size: 50px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+
 .phono {
   display: flex;
   flex-direction: column;
@@ -1051,6 +1058,18 @@ p {
   font-size: 40px;
 }
 
+.bob {
+  animation: bobbing 2s linear infinite;
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 25px;
+  }
+}
 .spotplay {
   display: flex;
   flex-direction: column;
@@ -1496,4 +1515,20 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: darkgray;
+}
+
+.git {
+  padding-left: 5px;
 }

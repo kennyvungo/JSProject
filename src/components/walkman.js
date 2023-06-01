@@ -54,6 +54,7 @@ constructor(){
             this.isPlaying = true;
             this.play.innerText = "▐▐";
             this.play.classList.add("pause")
+            document.querySelector(".walk").classList.add("bob")
             document.querySelector(".walkhead").classList.remove("kindahidden")
             document.querySelector(".walkhead").classList.add("fastfade")
             document.querySelector(".subwalk").classList.remove("kindahidden")
@@ -67,6 +68,7 @@ constructor(){
         this.isPlaying = false;
         this.play.innerText = "▶";
         this.play.classList.remove("pause")
+        document.querySelector(".walk").classList.remove("bob")
     }
 
 

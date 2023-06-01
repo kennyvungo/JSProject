@@ -45,6 +45,7 @@ class Boom{
         document.querySelector(".ipod").classList.remove("hidden");
         document.querySelector(".boombottom").classList.add("hidden")
         document.querySelector(".boombottom").classList.remove("fade")
+        document.querySelector(".boombottom").classList.remove("fadeout")
 
     }
 

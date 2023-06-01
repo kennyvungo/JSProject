@@ -8,17 +8,20 @@ class Home{
     }
 
     handleClick(){
-        this.home.classList.add("fadeout", "hidden");
+        this.home.classList.add("fadeout");
         document.querySelector(".foreword").classList.remove("hidden")
         document.querySelector(".foreword").classList.add("fastfade")
         setTimeout(this.delay,7000);
     }
 
     delay(){
-        document.querySelector(".foreword").classList.add("hidden")
+        document.querySelector(".home").classList.add("hidden")
+        document.querySelector(".home").classList.remove("fadeout");
+        document.querySelector(".foreword").classList.add("fadeout")
         document.querySelector(".phono").classList.add("fastfade");
         document.querySelector(".phono").classList.remove("hidden");
         document.querySelector(".bottom").classList.remove("hidden")
+        document.querySelector(".bottom").classList.add("fastfade");
     }
 }
 
