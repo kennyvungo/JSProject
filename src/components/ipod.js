@@ -27,11 +27,11 @@ class Ipod{
                         this.isPlaying ?  this.stopAudio() : this.playAudio() ;
                     }
                     else{
-                        alert("Need to select song first")
+                        alert("Need to select song first by pressing the center circle")
                     }
                 }
                 else{
-                    alert("Need to turn on iPod first");
+                    alert("Need to turn on iPod first by pressing the MENU button");
                 }
                 break;
             case this.menu:
