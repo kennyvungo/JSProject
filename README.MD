@@ -27,31 +27,15 @@ npm to manage project dependencies
 
 
 
-### IMPLEMENTATION TIMELINE
+### Key Features
 
-**Thursday**
-Finish readME,wireframe, plan timeline, Research more into libraries and API's to use, start setting up home landing, and some basic button functionality.  
+# Interactive Music 
+- Users can play pause and skip songs
 
-**Friday**
-Start creating some of the vector art, look into the simple animations.  
+# Image Carousel
 
-**Saturday**
-Start looking into audio, create the audio files, look into linking audio playing and stopping with clicking.  
+# Custom animations
 
-**Sunday**
-Break day  
-
-**Monday**
-Start working on user interactions with the animations, when they click they should be able to stop and start animations.  
-
-**Tuesday**
-Work on final landing page, should have clickable icons that bring you pack to respective page.  
-
-**Wednesday**
-Focus on the css, fonts, color scheme, design etc.  
-
-**Thursday**
-Polish up the project, if any extra time can look into bonus features
 
 
 ### BONUS FEATURES
