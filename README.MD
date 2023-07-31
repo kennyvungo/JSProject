@@ -21,10 +21,10 @@ In addition, this project will include:
 
 
 # TECHNOLOGIES, LIBRARIES, API's
-The project will be implemented with the following technologies:
-    - Webpack and Babel to bundle and transpile the source JavaScript code
-    - npm to manage project dependencies
-    - native HTML audio library
+The project was implemented with the following technologies:
++ Webpack and Babel to bundle and transpile the source JavaScript codenpm to manage project dependencies
++ native HTML audio library
+
 
 
 
