@@ -31,7 +31,7 @@ npm to manage project dependencies
 
 # Interactive Music 
 - Users can play pause and skip songs
-
+![Pho](./readMeImage/pho.png)
 # Image Carousel
 
 # Custom animations
