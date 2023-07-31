@@ -59,6 +59,43 @@ The project was implemented with the following technologies:
 }
 ```
 
+3b. TypeWriter Animation Code
+
+``` CSS
+    .typewriter {
+    overflow: hidden;
+    border-right: .07em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.1s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 54%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+```
+
 ### BONUS FEATURES
 look into multiple color schemes/background for each device    
 add a previous button for each device  
