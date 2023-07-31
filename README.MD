@@ -1,7 +1,10 @@
-### **JS PROJECT PROPOSAL: HOW WE LISTEN**
-## BACKGROUND
+### HOW WE LISTEN
 
-This project is an interactive timeline of music listening devices. It will start at the phonograph and go through the major listening devices  created throughout time, such as the record player, radio,iPod etc. As you click through it will display facts about each device.
+Here is the [Live Site Link](https://kennyvungo.github.io/JSProject/), check it out!
+
+# BACKGROUND
+
+This project is an interactive timeline of music listening devices. It will start at the phonograph and go through the major listening devices  created throughout time, such as the record player, radio, iPod etc. As you click through it will display facts about each device.
 
 In How We Listen, users will be able to 
     click through the timeline to see the next music device
@@ -13,28 +16,27 @@ In How We Listen, users will be able to
 In addition, this project will include:
     A production README
 
-## WIREFRAMES
+# WIREFRAMES
 ![Wireframe](./readMeImage/wireframe.png)
 
 
-## TECHNOLOGIES, LIBRARIES, API's
+# TECHNOLOGIES, LIBRARIES, API's
 The project will be implemented with the following technologies:
-Canvas API for rendering
-Howler.js for audio
-PIXI.js for CSS animations
-Webpack and Babel to bundle and transpile the source JavaScript code
-npm to manage project dependencies
+    - Webpack and Babel to bundle and transpile the source JavaScript code
+    - npm to manage project dependencies
+    - native HTML audio library
 
 
 
-### Key Features
+# Key Features
 
-# Interactive Music 
+1. Interactive Music 
 - Users can play pause and skip songs
 ![Pho](./readMeImage/pho.png)
-# Image Carousel
 
-# Custom animations
+2. Image Carousel
+
+3. Custom animations
 
 
 
