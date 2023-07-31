@@ -41,6 +41,23 @@ The project was implemented with the following technologies:
 - Users can interact with each device
 ![Pho](./readMeImage/spot.png)
 
+3a. Record Player Animation Code
+
+``` CSS
+.spin {
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+```
 
 ### BONUS FEATURES
 look into multiple color schemes/background for each device    
