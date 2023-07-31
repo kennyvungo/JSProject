@@ -35,9 +35,11 @@ The project was implemented with the following technologies:
 ![Pho](./readMeImage/pho.png)
 
 2. Image Carousel
+![Pho](./readMeImage/ipod.png)
 
-3. Custom animations
-
+3. Interactive Devices
+- Users can interact with each device
+![Pho](./readMeImage/spot.png)
 
 
 ### BONUS FEATURES
